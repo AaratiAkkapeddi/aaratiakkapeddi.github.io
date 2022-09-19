@@ -1,0 +1,41 @@
+.bg{
+    background-image: url('assets/profile.jpg');
+    filter:blur(30px) contrast(120%) brightness(0.5);
+    background-position: 70% 10%;
+    opacity: 0.8;
+}
+h1{
+    margin-bottom:0.5em;
+    font-size:24px;
+}
+img{
+    margin:5px 0;
+    max-width:200px;
+}
+main ul{
+    border: 2px solid #85ABA9;
+    padding:0;
+    border-radius: 5px;
+}
+main ul li{
+    list-style: none;
+    cursor: pointer;
+    padding:8px 10px;
+    border-bottom: 2px solid #85ABA9;
+}
+main ul li:last-child{
+    border:none;
+}
+main ul li a{
+    text-decoration: none;
+}
+main ul li a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:900px){
+    nav ul select {
+        max-width: 45%;
+        margin-top:3px;
+    }
+}

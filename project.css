@@ -1,0 +1,46 @@
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom:100px;
+    padding-bottom:100px;
+    border-bottom:2px solid #85ABA9;
+}
+.project h1{
+    margin: 25px 0;
+}
+.project .main-img{
+    display: block;
+    width: 100%;
+}
+.project img{
+    max-width: 100%;
+    margin: 15px 0;
+}
+.project img.mini{
+    max-width: 45%;
+    display: inline-block;
+}
+.bg{
+    background-image:url('assets/projects/ir/ir1.png');
+    filter:brightness(0.6) contrast(120%) blur(30px);
+    background-position: 70% 50%;
+}
+.caption{
+    font-size:12px;
+    width:100%;
+}
+.project em{
+    display: block;
+    width: 100%;
+}
+.project .vimeo{
+  margin: 15px 0;
+}
+@media(max-width:900px){
+    .project{
+    margin-bottom:50px;
+    padding-bottom:50px;
+    }
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarati</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div id='bg-nav'><div class="bg"></div></div>
+    <div class="bg"></div>
+    <!-- Navigation -->
+    <nav>
+        <ul class="left">
+            <li><a href="/">AARATI AKKAPEDDI</a></li>
+            <li><div id="message">
+                <img src='assets/closed.svg'/><img src='assets/open.svg'/>
+                <span><em>A message for you</em></span>
+                <div id="message-inner">
+                    <p>
+                        Dear Reader,<br>
+                        <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
+                        In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="/blog.html">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
+                        Sending you my best,
+                        <blockquote>Aarati Akkapeddi<span id='blinking-cursor'></span></blockquote></p>
+                </div>
+                <div id="message-outer"></div>
+            </div></li>
+        </ul>
+        <ul class="right">
+            <li>
+              Currently Viewing:  
+                <select id="main-menu" autocomplete="off">
+                    <option value="./about.html">About</option>
+                    <option value="./">Selected Works</option>
+                    <option value="./blog.html">Blog</option>
+                    <option value="./coding.html">Coding</option>
+                    <option value="./teaching.html">Teaching</option>
+                </select>
+            </li>
+      
+
+        </ul>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- MAIN CONTENT -->
+    <main>
+    
+        <img src="assets/me.JPG"/><br>
+        Aarati Akkapeddi<br>They/them<br>
+        aarati.akkapeddi@gmail.com<br>
+        <a href='https://docs.google.com/spreadsheets/d/1ntLn1Vycf5y2yhDftEH7s2YjY1oPxguHvnFr6Ft1hvY/edit#gid=0'>CV</a>, <a href="./blog.html">Blog</a>, <a href='https://www.instagram.com/memory__work/'>Instagram</a>, <a href="https://github.com/AaratiAkkapeddi">Github</a>, <a href="./teaching.html">Teaching</a><br>
+        Location: Occupied Lenapehoking (NYC)<br><br>
+        <em>I would like to acknowledge the Lenni Lenape peoples who are the original and continued rightful stewards of the land that I love and on which I work and reside.</em><br><br>
+        I am a Telugu-American cross/inter/multi-disciplinary artist, coder and educator based in Lenapehoking (Brooklyn, NY). I often use family and archival photographs as source material, combining code-based and analog techniques (photography & printmaking) to create artwork about intergenerational/collective memory. My creative work has been supported by institutions such as Ada X, The Interactive Telecommunications program at NYU, ETOPIA Center for Art & Technology, Fotomuseum Winterthur, and LES Printshop. I currently teach creative coding in the Design & Technology department at Parsons and work as a designer/developer for The Experimental Humanities Collaborative Network where I create digital spaces and tools.<span id='blinking-cursor'></span>
+        <br><br>
+        Selected Press:
+        <ul>
+            <li><a href="https://pioneerworks.org/broadcast/algorithmic-apparitions-meg-miller">Algorithmic Apparitions by Meg Miller - Pioneer Works | Broadcast</a></li>
+            <li><a href="https://www.nytimes.com/interactive/2021/07/26/arts/design/mom-deepfake-akkapeddi.html">Can Fake Images Show Us Something Real? by Meg Miller - The New York Times</a></li>
+            <li><a href="https://www.10011mag.co/articles/interview-with-aarati-akkapeddi">Interview with Aarati Akkapeddi by Riley Gunderson - 10011 Magazine</a></li>
+            <li><a href="https://www.stirworld.com/see-features-aarati-akkapeddi-on-the-poetics-and-politics-of-beauty-and-identity-through-data-sets">Aarati Akkapeddi on the poetics and politics of beauty and identity through data sets by Girinandini Singh - Stir World</a></li>
+        </ul>
+
+        Recent/Upcoming Exhibitions:
+        <ul>
+            <li><a href="https://centerforbookarts.org/performing-documents-modes-assembling-exhibition">Current | Performing Documents: Modes of Assembling @ Center for Book Arts</a></li>
+            <li><a href="https://savvy-contemporary.com/en/events/2022/magical-hackerism-exhibitions/">Current | Magical Hackerism. Or the Elasticity of Resilience @ Savvy Contemporary</a></li>
+            <li><a href="https://printsales.thephotographersgallery.org.uk/">Upcoming | A·kin @ The Photographers Gallery</a></li>
+        </ul>
+        <br><br>
+        <a href="https://docs.google.com/spreadsheets/d/1ntLn1Vycf5y2yhDftEH7s2YjY1oPxguHvnFr6Ft1hvY/edit#gid=0">View full C.V.</a>
+    </main>
+
+
+
+    <!-- Nav js-->
+    <script>
+        window.onload = function(){
+            let select = document.querySelector("#main-menu")
+            select.selectedIndex = 0
+            select.addEventListener("change",function(){
+                window.location.href = this.value;
+            })
+
+            let open = document.querySelector("#message img:nth-child(1)");
+            open.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let open2 = document.querySelector("#message em");
+            open2.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let close = document.querySelector("#message img:nth-child(2)");
+            close.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+            let close2 = document.querySelector("#message-outer");
+            close2.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+        }
+    </script>
+</body>
+</html>
