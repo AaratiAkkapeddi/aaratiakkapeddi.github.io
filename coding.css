@@ -41,4 +41,8 @@ main ul li span{
         max-width: 45%;
         margin-top:3px;
     }
+    main ul li span{
+        display: block;
+        float: none;
+    }
 }
