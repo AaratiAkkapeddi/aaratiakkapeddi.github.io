@@ -25,7 +25,13 @@ article{
     border-bottom:none;
     padding:0 15px;
 }
+article:nth-child(9){
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 article:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     border-bottom:2px solid #85ABA9;
 }
 article h2 a{
