@@ -202,9 +202,37 @@
     </script>
     <!-- image changing js -->
     <script>
+        /*"#ir">I knew that if I walked in your footsteps, it would become a ritual</option>
+                      <option value="#akin">A·kin</option>
+                      <option value="#kolam">Kolam Series</option>
+                      <option value="#cloud">Cloud9 memorial</option>
+                      <option value="#goya"*/
+        let current = '#ir'
          window.addEventListener("scroll", function() {
             let targets = document.querySelectorAll("main img");
+            let ir = document.getElementById("ir")
+            let akin = document.getElementById("akin")
+            let kolam = document.getElementById("kolam")
+            let cloud = document.getElementById("cloud")
+            let goya = document.getElementById("goya")
+            const $select = document.querySelector('#project-menu');
+
             let bg = null;
+            if (window.scrollY > (ir.offsetTop - 20)) {
+                $select.value = '#ir'
+            }
+            if (window.scrollY > (akin.offsetTop- 20)) {
+                $select.value = '#akin'
+            }
+            if (window.scrollY > (kolam.offsetTop- 20)) {
+                $select.value = '#kolam'
+            }
+            if (window.scrollY > (cloud.offsetTop- 20)) {
+                $select.value = '#cloud'
+            }
+            if (window.scrollY > (goya.offsetTop- 20)) {
+                $select.value = '#goya'
+            }
             for(let i = 0; i < targets.length; i++){
                 let elementTarget = targets[i]
                 if (window.scrollY > (elementTarget.offsetTop)) {
