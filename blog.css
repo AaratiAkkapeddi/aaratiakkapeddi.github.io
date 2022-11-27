@@ -12,6 +12,13 @@ main img{
 main .image-link-expand{
     display: none;
 }
+iframe{
+    border: none;
+    width: 100%;
+    position: relative;
+    left:-8px;
+    height: calc(100vh - 300px);
+}
 h2{
     font-weight: normal;
     font-size: inherit;
