@@ -1,6 +1,6 @@
 .bg{
     background-image: url('assets/profile.jpg');
-    filter:blur(30px) contrast(120%) brightness(0.5);
+    filter:blur(30px) contrast(120%) brightness(0.3);
     background-position: 70% 10%;
     opacity: 0.8;
 }
