@@ -4,7 +4,7 @@
     justify-content: space-between;
     margin-bottom:100px;
     padding-bottom:100px;
-    border-bottom:2px solid #85ABA9;
+    border-bottom:2px solid #f8f8f8;
 }
 .project h1{
     margin: 25px 0;
@@ -24,9 +24,9 @@
     align-self: flex-start;
 }
 .bg{
-    background-image:url('assets/projects/ir/ir1.png');
-    filter:brightness(0.3) contrast(120%) blur(30px);
-    background-position: 70% 50%;
+    /* background-image:url('assets/projects/ir/ir1.png'); */
+    /* filter:brightness(0.3) contrast(120%) blur(30px);
+    background-position: 70% 50%; */
 }
 .caption{
     font-size:12px;

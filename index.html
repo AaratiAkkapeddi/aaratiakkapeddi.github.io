@@ -82,7 +82,7 @@
                 <span class="caption">installation at Center for Book Arts</span>
                 <img src="assets/projects/ir/ir11.JPG"/>
                 <span class="caption">installation at Center for Book Arts</span>
-                <div class="vimeo" style="padding:56.25% 0 0 0;position:relative; width: 100%;"><iframe src="https://player.vimeo.com/video/721567723?h=b62add3a7b&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script><br>
+                <div class="vimeo" style="padding:56.25% 0 0 0;position:relative; width: 100%;"><iframe src="https://player.vimeo.com/video/721567723?h=b62add3a7b&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js" async></script><br>
                 <span class="caption">video</span>
             </div>
 
@@ -227,7 +227,7 @@
             // let goya = document.getElementById("goya")
             const $select = document.querySelector('#project-menu');
 
-            let bg = null;
+            // let bg = null;
             if (window.scrollY > (ir.offsetTop - 20)) {
                 $select.value = '#ir'
             }
@@ -249,12 +249,12 @@
                   bg = elementTarget.src;
                 }
             }
-            if(bg){
-                let bgs = document.querySelectorAll('.bg');
-                for(let i = 0; i < bgs.length; i++){
-                    bgs[i].style.backgroundImage = "url(" + bg + ")"
-                }
-            }
+            // if(bg){
+            //     let bgs = document.querySelectorAll('.bg');
+            //     for(let i = 0; i < bgs.length; i++){
+            //         bgs[i].style.backgroundImage = "url(" + bg + ")"
+            //     }
+            // }
          });
     </script>
 </body>

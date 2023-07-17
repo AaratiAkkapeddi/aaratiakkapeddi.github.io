@@ -1,7 +1,7 @@
 .bg{
-    background-image: url('assets/profile.jpg');
-    filter:blur(30px) contrast(120%) brightness(0.3);
-    background-position: 70% 10%;
+    /* background-image: url('assets/profile.jpg'); */
+    /* filter:blur(30px) contrast(120%) brightness(0.3);
+    background-position: 70% 10%; */
     opacity: 0.8;
 }
 h1{
@@ -13,7 +13,7 @@ img{
     max-width:200px;
 }
 main ul{
-    border: 2px solid #85ABA9;
+    border: 2px solid #f8f8f8;
     padding:0;
     border-radius: 5px;
 }
@@ -21,7 +21,7 @@ main ul li{
     list-style: none;
     cursor: pointer;
     padding:8px 10px;
-    border-bottom: 2px solid #85ABA9;
+    border-bottom: 2px solid #f8f8f8;
 }
 main ul li:last-child{
     border:none;

@@ -2,8 +2,8 @@ main > img:first-child{
     width:250px;
 }   
 .bg{
-    background-image: url("assets/me.JPG");
-    background-position: 60% 50%;
+    /* background-image: url("assets/me.JPG"); */
+    /* background-position: 60% 50%; */
 }
 main img{
     max-width: 100%;

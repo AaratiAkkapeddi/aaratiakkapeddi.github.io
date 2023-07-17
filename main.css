@@ -2,10 +2,10 @@ body{
     margin:0;
     padding:0;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:#E1ECEB;
+    color:#f8f8f8;
     letter-spacing: 0.03em;
     font-size: 24px;
-    background-color: black;
+    background-color: rgb(19, 2, 2);
 }
 h1{
     margin:0;
@@ -33,14 +33,15 @@ blockquote{
     position:absolute;
 }
 #bg-nav{
-    height: 150px;
+    height: 130px;
     width:100%;
     overflow: hidden;
     z-index: 2;
     position:fixed;
     top:-50px;
     left:0;
-    filter:blur(30px);
+    background-color: rgb(19, 2, 2);
+    border-bottom:1px solid #f8f8f8;
     opacity: 1;
 }
 
@@ -68,17 +69,17 @@ nav{
     margin-top:5px;
 }
 #message img:nth-child(1):hover{
-    box-shadow: 0px 0px 20px 4px #85ABA9;
+    box-shadow: 0px 0px 20px 4px #f8f8f8;
 }
 
 #message-inner{
    position:fixed;
    max-width: calc(70% - 55px);
-   border: 2px solid #85ABA9;
+   border: 2px solid #f8f8f8;
    padding: 25px;
    display: none;
    top:4em;
-   background-image: url('assets/letter.png');
+   background-color: rgb(19, 2, 2);
    background-repeat: no-repeat;
    background-position: 17% 40%;
    background-size:300%;
@@ -137,6 +138,10 @@ nav a{
 nav ul{
     padding-left:0;
     padding:0px 15px;
+    margin:10px 0;
+}
+nav ul.right li:first-child{
+    padding-top:0;
 }
 nav li{
     list-style: none;
@@ -148,13 +153,13 @@ nav ul:last-child{
 }
 nav li select{
     background-color: transparent;
-    color:#E1ECEB;
+    color:#f8f8f8;
     font-size: 14px;
     max-width: 200px;
     text-overflow: ellipsis;
-    padding:3px 7px;
+    padding:2px 7px;
     border-radius: 5px;
-    border:2px solid #85ABA9;
+    border:1px solid #f8f8f8;
 }
 @keyframes "blink" {
     from, to {
@@ -202,7 +207,7 @@ nav li select{
   }
 #blinking-cursor{
 	display: inline-block;
-	background: #E1ECEB;
+	background: #f8f8f8;
 	height:24px;
 	width:2px;
 	margin-left:5px;
