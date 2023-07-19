@@ -231,11 +231,12 @@
             const $select = document.querySelector('#project-menu');
 
             // let bg = null;
-            if (window.scrollY > (ir.offsetTop - 20)) {
-                $select.value = '#ir'
-            }
+           
             if (window.scrollY > (akin.offsetTop- 20)) {
                 $select.value = '#akin'
+            }
+            if (window.scrollY > (ir.offsetTop - 20)) {
+                $select.value = '#ir'
             }
             if (window.scrollY > (kolam.offsetTop- 20)) {
                 $select.value = '#kolam'
