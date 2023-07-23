@@ -5,7 +5,7 @@ body{
     color:#f8f8f8;
     letter-spacing: 0.03em;
     font-size: 24px;
-    background-color: rgb(19, 2, 2);
+    background-color: rgb(37, 32, 32);
 }
 h1{
     margin:0;
@@ -40,7 +40,7 @@ blockquote{
     position:fixed;
     top:-50px;
     left:0;
-    background-color: rgb(19, 2, 2);
+    background-color: rgb(37, 32, 32);
     border-bottom:1px solid #f8f8f8;
     opacity: 1;
 }
@@ -79,7 +79,7 @@ nav{
    padding: 25px;
    display: none;
    top:4em;
-   background-color: rgb(19, 2, 2);
+   background-color: rgb(37, 32, 32);
    background-repeat: no-repeat;
    background-position: 17% 40%;
    background-size:300%;
