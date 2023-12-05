@@ -1,0 +1,584 @@
+#words {
+
+position: absolute;
+width: 450px;
+height: 85px;
+left: 512px;
+top: 442px; 
+
+font-family: "Times New Roman", Times, serif;
+font-weight: 800;
+font-size: 64px;
+line-height: 75px;
+/* identical to box height */
+text-align: center;
+
+color: #000000;
+}
+
+#eyes  {
+position: absolute;
+width: 1440px;
+height: 900px;
+left: 0px;
+top: -78px;
+
+background: url(./images/eyes.png);
+}
+
+ 
+#your{
+/* help 2 */
+
+position: absolute;
+width: 1440px;
+height: 1184.33px;
+left: 0px;
+top: -226px;
+
+background: url(./images/help2.png);
+}
+
+
+#ask{ 
+position: absolute;
+width: 853px;
+height: 110px;
+left: 215px;
+top: 518px;
+
+font-family: "Times New Roman", Times, serif;
+font-weight: 800;
+font-size: 64px;
+line-height: 75px;
+text-align: center;
+
+}
+
+
+
+
+/* yell for help */
+#yelltext{
+position: absolute;
+width: 572px;
+height: 170px;
+left: 548px;
+top: 341px;
+
+font-family: "Times New Roman", Times, serif;
+font-weight: 800;
+font-size: 64px;
+line-height: 75px;
+text-align: center;
+
+color: #000000;
+}
+
+#yellimage{
+
+/* IMG_1544 1 */
+position: absolute;
+width: 1694px;
+height: 1981px;
+left: -207px;
+top: -891px;
+
+background: url(./images/IMG_1544.png);
+}
+
+/* yell */
+#yell2text{
+position: absolute;
+width: 505px;
+height: 195px;
+left: 289px;
+top: 150px;
+
+font-family: times new roman, times, serif
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+text-align: center;
+
+color: #000000;
+}
+
+#yell2image{
+	/* IMG_1544 2 */
+
+position: absolute;
+width: 3275px;
+height: 3828.86px;
+left: -1439px;
+top: -2426px;
+
+background: url(./images/IMG_1544.png);
+}
+
+#yell3text{
+	position: absolute;
+width: 625px;
+height: 235px;
+left: 576px;
+top: 159px;
+
+font-family: times new roman, roman,serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+text-align: center;
+
+color: #000000;
+}
+#yell3image{
+/* IMG_1544 2 */
+
+position: absolute;
+width: 2577px;
+height: 1467px;
+left: -232px;
+top: -140px;
+
+background: url(./images/yell2.png);
+}
+
+#end2text{
+position: absolute;
+width: 658px;
+height: 241px;
+left: -82px;
+top: 158px;
+
+font-family: times new roman, roman, serif;
+font-weight: 800;
+font-size: 144px;
+line-height: 170px;
+text-align: center;
+
+color: #000000;
+
+}
+#end2image{
+position: absolute;
+width: 1129px;
+height: 743px;
+left: -82px;
+top: -68px;
+
+background: url(./images/yell2.png)
+}
+
+#seatext{
+	/* drop into water */
+
+position: absolute;
+width: 664px;
+height: 262px;
+left: 186px;
+top: 674px;
+
+font-family: times new roman, roman, serif
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+text-align: center;
+
+color: #000000;
+}
+
+#seaimage{
+	/* water 1 */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: url(./images/nycwater.png);
+}
+
+#sea2text{
+	/* swim for your life */
+
+position: absolute;
+width: 756px;
+height: 233px;
+left: 684px;
+top: 360px;
+
+font-family: times new roman, roman, serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+text-align: center;
+
+color: #000000;
+}
+
+#sea2image{
+	position: absolute;
+width: 1440px;
+height: 1024.89px;
+left: 0px;
+top: -3.02px;
+
+background: url(./images/water.png);
+}
+
+#sea3text{
+	position: absolute;
+width: 386px;
+height: 109px;
+left: 630px;
+top: 487px;
+
+font-family: times new roman, roman, serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+text-align: center;
+
+color: #000000
+}
+
+#sea3image{
+
+position: absolute;
+width: 1152px;
+height: 700px;
+left: 0px;
+top: 0px;
+
+background: url(./images/water2.png);
+}
+
+#sea4text{
+	/* swim */
+
+position: absolute;
+width: 632px;
+height: 176px;
+left: 954px;
+top: 362px;
+
+font-family: times new roman, roman, serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+
+color: #000000;
+}
+
+#sea4image{
+	/* shore 1 */
+
+position: absolute;
+width: 2159px;
+height: 1276px;
+left: -93px;
+top: -58px;
+
+background: url(./images/shore.png)
+}
+
+#lastswimtext{
+position: absolute;
+width: 359px;
+height: 162px;
+left: 613px;
+top: 174px;
+
+font-family: times new roman, roman, serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+
+color: #000000;
+}
+
+#lastswimimage{
+position: absolute;
+width: 1825px;
+height: 1027px;
+left: -384px;
+top: -92px;
+
+background: url(./images/nycwater.png);
+}
+#seaendtext{
+	/* sink */
+
+position: absolute;
+width: 517px;
+height: 102px;
+left: 0px;
+top: 775px;
+
+font-family: times new roman,roman,serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+
+color: #000000;
+}
+#seaendimage{
+	/* water 3 */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: url(./images/water.png);
+}
+
+#eyestext{
+	/* you keep rubbing your eyes but you can’t see */
+
+position: absolute;
+width: 529px;
+height: 123px;
+left: 672px;
+top: 40px;
+
+font-family: times new roman, roman, serif;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+
+color: #000000;
+
+}
+#eyesimage{
+	/* eyes4 */
+
+position: absolute;
+width: 1133px;
+height: 421px;
+left: 9px;
+top: 140px;
+
+background: url(./images/eyes4.png);
+}
+
+#rubbingtext{
+	/* keep rubbing */
+
+position: absolute;
+width: 477px;
+height: 138px;
+left: 301px;
+top: 122px;
+
+font-family: times new roman, roman, serif;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+
+color: #000000;
+}
+#rubbingimage{
+	/* eyes2 1 */
+
+position: absolute;
+width: 1530px;
+height: 601px;
+left: -516px;
+top: 27px;
+
+background: url(./images/eyes2.png);
+}
+
+#rubbing2text{
+	/* keep rubbing */
+
+position: absolute;
+width: 623px;
+height: 133px;
+left: 246px;
+top: 580px;
+
+font-family: times new roman, roman, serif
+font-weight: normal;
+font-size: 64px;
+line-height: 75px;
+
+color: #000000;
+}
+#rubbing2image{
+	/* eyes3 1 */
+
+position: absolute;
+width: 1440px;
+height: 900px;
+left: 0px;
+top: -79px;
+
+background: url(./images/eyes3.png);
+}
+
+
+#closetext{
+	/* close the door */
+
+position: absolute;
+width: 581px;
+height: 133px;
+left: 425px;
+top: 591px;
+
+font-family: times new roman,roman,serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+
+
+color: #000000;
+}
+#closeimage{
+/* door 1 */
+
+position: absolute;
+width: 679px;
+height: 728px;
+left: 0px;
+top: -97px;
+
+background: url(./images/door.png);
+}
+
+#close2text{
+	/* slam the door */
+
+position: absolute;
+width: 716px;
+height: 178px;
+left: 105px;
+top: 132px;
+
+font-family: times new roman, roman, serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+
+color: #000000;
+}
+#close2image{
+	/* door2 1 */
+
+position: absolute;
+width: 848px;
+height: 1296px;
+left: 152px;
+top: -298px;
+
+background: url(./images/door2.png);
+}
+#slamtext{
+	/* slam */
+
+position: absolute;
+width: 661px;
+height: 189px;
+left: 561px;
+top: 161px;
+
+font-family: times new roman, roman, serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+
+color: #FFFFFF;
+}
+#slamimage{
+	/* door2 2 */
+
+position: absolute;
+width: 1825px;
+height: 2204px;
+left: -118px;
+top: -577px;
+
+background: url(./images/door2.png);
+}
+#slam2text{
+	/* slam */
+
+position: absolute;
+width: 314px;
+height: 138px;
+left: 922px;
+top: 376px;
+
+font-family: times new roman, roman, serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+
+color: #FFFFFF;
+
+
+}
+#slam2image{
+	position: absolute;
+width: 2286px;
+height: 3625px;
+left: -322px;
+top: -1163px;
+
+background: url(./images/door.png)
+}
+
+#slam3text{
+position: absolute;
+width: 314px;
+height: 138px;
+left: 734px;
+top: 0px;
+
+font-family: times new roman, roman, serif;
+font-weight: 800;
+font-size: 96px;
+line-height: 113px;
+
+color: #FFFFFF;
+}
+#slam3image{
+position: absolute;
+width: 2286px;
+height: 3625px;
+left: -895px;
+top: -1575px;
+
+background: url(./images/door.png);}
+
+#end1text{
+	/* open */
+
+position: absolute;
+width: 418px;
+height: 252px;
+left: 349px;
+top: 323px;
+
+font-family: times new roman, roman, italic;
+font-weight: 800;
+font-size: 72px;
+line-height: 85px;
+
+color: #FFFFFF;
+
+}
+#end1image{
+	/* DSC_0451 1 */
+
+position: absolute;
+width: 1880px;
+height: 3418px;
+left: -349px;
+top: -956px;
+
+background: url(./images/door2.png)}
