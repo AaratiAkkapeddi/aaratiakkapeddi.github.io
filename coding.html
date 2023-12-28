@@ -50,7 +50,6 @@
 
     <!-- MAIN CONTENT -->
     <main>
-        <h1>Aarati Akkapeddi</h1>
         <img src="assets/berry.png"/><br>
         They/them<br>
         aarati.akkapeddi@gmail.com<br>
@@ -91,11 +90,6 @@
     <!-- Nav js-->
     <script>
         window.onload = function(){
-            let select = document.querySelector("#main-menu")
-            select.selectedIndex = 0
-            select.addEventListener("change",function(){
-                window.location.href = this.value;
-            })
 
             let open = document.querySelector("#message img:nth-child(1)");
             open.addEventListener("click", function(){

@@ -11,49 +11,36 @@
 
 </head>
 <body>
-    <div id='bg-nav'><div class="bg"></div></div>
-    <div class="bg"></div>
-    <!-- Navigation -->
+         <!-- Navigation -->
     <nav>
-        <ul class="left">
-            <li><a href="/">AARATI AKKAPEDDI</a></li>
-            <li><div id="message">
-                <img src='assets/closed.svg'/><img src='assets/open.svg'/>
-                <span><em>A message for you</em></span>
-                <div id="message-inner">
-                    <p>
-                        Dear Reader,<br>
-                        <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
-                        In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="./fieldnotes/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
-                        Sending you my best,
-                        <blockquote>Aarati Akkapeddi<span id='blinking-cursor'></span></blockquote></p>
-                </div>
-                <div id="message-outer"></div>
-            </div></li>
-        </ul>
-        <ul class="right">
-            <li>
-              Currently Viewing:  
-                <select id="main-menu" autocomplete="off">
-                    <option value="./about.html">About</option>
-                    <option value="./">Selected Works</option>
-                    <option value="/fieldnotes/">Blog</option>
-                    <option value="./coding.html">Coding</option>
-                    <option value="./teaching.html">Teaching</option>
-                </select>
-            </li>
-      
-
-        </ul>
+        <h1><a href="/">Aarati</a></h1>
+        <a href="./">Work</a>
+        <a href="./about.html">About</a>
+        <a href="./blog.html">Blog</a>
+            
     </nav>
+    <!-- End Navigation -->
+    <div id="message">
+        <img src='assets/closed.svg'/><img src='assets/open.svg'/>
+        <span><em></em></span>
+        <div id="message-inner">
+            <p>
+                Dear Reader,<br>
+                <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
+                    In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="./fieldnotes/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
+                Sending you my best,
+                <blockquote>Aarati<span id='blinking-cursor'></span></blockquote></p>
+        </div>
+        <div id="message-outer"></div>
+    </div>
+
     <!-- End Navigation -->
 
     <!-- MAIN CONTENT -->
     <main>
     
-        <img src="assets/me.JPG"/><br>
-        Aarati Akkapeddi<br>They/them<br>
-        aarati.akkapeddi@gmail.com<br>
+        <img src="assets/me.JPG"/>
+        <a href="mailto:aarati.akkapeddi@gmail.com" target="_blank">aarati.akkapeddi@gmail.com</a><br>
         <a href='https://docs.google.com/spreadsheets/d/1ntLn1Vycf5y2yhDftEH7s2YjY1oPxguHvnFr6Ft1hvY/edit#gid=0'>CV</a>, <a href="./blog.html">Blog</a>, <a href='https://www.instagram.com/memory__work/'>Instagram</a>, <a href="https://github.com/AaratiAkkapeddi">Github</a>, <a href="./teaching.html">Teaching</a><br>
         Location: Occupied Lenapehoking (NYC)<br>
         <a href="https://drive.google.com/file/d/1awujsVKe7IYXj42Yi_NLF-x-xMuc1otf/view">How to pronounce my name</a><br></br>
@@ -90,11 +77,6 @@
     <!-- Nav js-->
     <script>
         window.onload = function(){
-            let select = document.querySelector("#main-menu")
-            select.selectedIndex = 0
-            select.addEventListener("change",function(){
-                window.location.href = this.value;
-            })
 
             let open = document.querySelector("#message img:nth-child(1)");
             open.addEventListener("click", function(){
