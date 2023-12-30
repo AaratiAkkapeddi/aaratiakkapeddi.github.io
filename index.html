@@ -10,13 +10,41 @@
 
 </head>
 <body>
+    <svg display="none">
+        <defs>
+           <filter id="turbulence-1">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-2">
+            <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-3">
+            <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-4">
+            <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-5">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        </defs>
+      </svg>
     <!-- Navigation -->
     <nav>
-        <h1><a href="/">AARATI AKKAPEDDI</a></h1>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
         <div>
-           <a href="./about.html">About</a>
-           <a href="./about.html">Selected Work</a>
-        <a href="./blog.html">Field Notes</a>  
+           <a href="./about.html"><span>About</span></a>
+           <a href="./about.html"><span>Selected Work</span></a>
+        <a href="./blog.html"><span>Field Notes</span></a>  
         </div>
        
             
@@ -44,54 +72,69 @@
 
     
     <div id="gallery">
+        <div>
+        <a href="/akin.html">
+        <h4> A·KIN<br><br>
+        Code, Video, Digital Print, Risograph, Website
+        <br>
+        in collaboration with stars.archive for The Photographers Gallery
+        </h4>
+        </a> 
+        <a href="/akin.html"><img src="./assets/projects/thumbs/akin.jpg"></a>   
+        </div>
 
-        <a href="/">
-           <h4> A·KIN<br><br>
-            Code, Video, Digital Print, Risograph, Website
-            <br>
-            in collaboration with stars.archive for The Photographers Gallery
-           </h4>
-           
-           <img src="./assets/projects/thumbs/6file.jpg">
-        </a>
-        <a href="/">
-            <h4> SWARAJYALAXMI
-                <br><br>
-                May 2022 - Code, Video, Lumen & Cyanotype</h4>
-            <img src="./assets/projects/thumbs/5file.png">
+        <div>
+        <a href="/swarajyalaxmi.html">
+        <h4> SWARAJYALAXMI
+        <br><br>
+        Code, Performance, Rice Flour, Turmeric, Salt, Banana Leaf, intaglio ink
 
-        </a>
-        <a href="/">
-            <h4>I KNEW THAT IF I WALKED IN YOUR FOOTSTEPS, IT WOULD BECOME A RITUAL
-                <br><br>
-                May 2022 - Code, Video, Lumen & Cyanotype
-            </h4>
-            <img src="./assets/projects/thumbs/4file.png">
+        </h4>
+        </a> 
+        <a href="/swarajyalaxmi.html"><img src="./assets/projects/thumbs/Akkapeddi_Aarati_01.jpg"></a>   
+        </div>
 
-        </a>
-        <a href="/">
-            <h4> FAUX FOLIAGE
-                <br><br>
-                May 2022 - Code, Video, Lumen & Cyanotype
-            </h4>
-            <img src="./assets/projects/thumbs/3file.jpeg">
+        <div>
+        <a href="/ritual.html">
+        <h4> I KNEW THAT IF I WALKED IN YOUR FOOTSTEPS, IT WOULD BECOME A RITUAL
+        <br><br>
+        Code, Cyanolumen Prints, Video
+        </h4>
+        </a> 
+        <a href="/ritual.html"><img src="./assets/projects/thumbs/4file.png"></a>   
+        </div>
 
-        </a>
-        <a href="/">
-            <h4> LENTICULARS<br><br>
-                May 2022 - Code, Video, Lumen & Cyanotype</h4>
-            <img src="./assets/projects/thumbs/1file.jpeg">
+        <div>
+        <a href="/foliage.html">
+        <h4> FAUX FOLIAGE
+        <br><br>
+        code, silkscreen, plexiglass, digital print
+        </h4>
+        </a> 
+        <a href="/foliage.html"><img src="./assets/projects/thumbs/3file.jpeg"></a>   
+        </div>
 
-        </a>
 
-        <a href="/">
-            <h4> CLOUD 9 GARDEN
-                <br><br>
-                May 2022 - Code, Video, Lumen & Cyanotype
-            </h4>
-            <img src="./assets/projects/thumbs/2file.png">
+        <div>
+        <a href="/lenticular.html">
+        <h4> LENTICULARS<br><br>
+        Lenticular prints, hair, plant matter
+        </h4>
+        </a> 
+        <a href="/lenticular.html"><img src="./assets/projects/thumbs/4file.png"></a>   
+        </div>
+ 
 
-        </a>
+        <div>
+        <a href="/cloud9.html">
+        <h4> CLOUD9.GARDEN
+            <br><br>
+            code
+        </h4>
+        </a> 
+        <a href="/cloud9.html"><img src="./assets/projects/thumbs/2file.png"></a>   
+        </div>
+
 
 
     </div>
@@ -118,9 +161,32 @@
                 document.querySelector("#message").classList.remove('on')
             })
         }
+        
     </script>
     <!-- image changing js -->
+    <script>
+    
 
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
+    </script>
 </body>
 </html>
 

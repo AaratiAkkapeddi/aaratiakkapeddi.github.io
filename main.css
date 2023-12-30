@@ -14,11 +14,18 @@ a, a:link, a:visited{
    color: #333;
 }
 a:hover{
-    color: blue;
-    text-shadow: 1px 1px 20px  #33333371;
+    color: #333;
+    /* text-shadow: 1px 1px 20px  #33333371; */
 
     
 }
+a:hover > *{
+    animation: squigglevision 0.2s 1 alternate;
+}
+.squiggle{
+    animation: squigglevision 0.2s 1 alternate;
+}
+
 .project p{
     margin: 30px auto;
 }
@@ -35,16 +42,18 @@ main{
 #gallery h1{
     margin-bottom: 30px;
 }
-nav h1{
-    /* font-weight: bold; */
-}
 
-#gallery a{
+
+#gallery div{
     display: flex;
     justify-content: space-between;
     flex-basis: calc(100% - 2px);
     padding: 15px 0;
+    margin-bottom: 30px;
     text-decoration:none;
+}
+#gallery a:hover{
+    color: #333;
 }
 #gallery h4{
     margin:0;
@@ -53,7 +62,8 @@ nav h1{
     flex-basis: calc(50% - 30px);
 
 }
-#gallery a img{
+#gallery a{
+    text-decoration: none;
     max-width: 50%;
 }
 
@@ -65,14 +75,19 @@ h1{
 nav a{
     font-size: 18px;
 }
+nav h1{
+    font-size: 18px;
+}
 /* NAVIGATION */
+
 nav{
     position: fixed;
     border-bottom: 1px solid #333;
-    top:0;
+    top:-5px;
     left:0;
     z-index: 999;
     padding: 15px;
+    padding-top:20px;
     width: calc(100% - 30px);
     display: flex;
     justify-content: flex-start;
@@ -108,8 +123,26 @@ nav ul li{
     margin-top:5px;
 }
 #message img:nth-child(1):hover{
-    box-shadow: 0px 0px 20px 2px rgba(0, 0, 255, 0.504);
+    box-shadow: 0px 0px 20px 2px #333;
 }
+@keyframes squigglevision {
+    0% {
+      filter: url("#turbulence-1");
+    }
+    25% {
+      filter: url("#turbulence-2");
+    }
+    50% {
+      filter: url("#turbulence-3");
+    }
+    75% {
+      filter: url("#turbulence-4");
+    }
+    100% {
+      filter: url("#turbulence-5");
+    }
+  }
+
 
 #message-inner{
    position:fixed;
