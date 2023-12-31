@@ -11,41 +11,60 @@
 
 </head>
 <body>
-    <div id='bg-nav'><div class="bg"></div></div>
-    <div class="bg"></div>
+    <svg display="none">
+        <defs>
+            <filter id="turbulence-1">
+             <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-2">
+             <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-3">
+             <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-4">
+             <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-5">
+             <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         </defs>
+      </svg>
     <!-- Navigation -->
     <nav>
-        <ul class="left">
-            <li><a href="/">AARATI AKKAPEDDI</a></li>
-            <li><div id="message">
-                <img src='assets/closed.svg'/><img src='assets/open.svg'/>
-                <span><em>A message for you</em></span>
-                <div id="message-inner">
-                    <p>
-                        Dear Reader,<br>
-                        <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
-                            In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="./fieldnotes/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
-                        Sending you my best,
-                        <blockquote>Aarati Akkapeddi<span id='blinking-cursor'></span></blockquote></p>
-                </div>
-                <div id="message-outer"></div>
-            </div></li>
-        </ul>
-        <ul class="right">
-            <li>
-              Currently Viewing:  
-                <select id="main-menu" autocomplete="off">
-                    <option value="./coding.html">Coding</option>
-                    <option value="./about.html">About</option>
-                    <option value="./">Selected Works</option>
-                    <option value="./fieldnotes/">Blog</option>
-                    <option value="./teaching.html">Teaching</option>
-                </select>
-            </li>
-      
-
-        </ul>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+           <a href="./about.html"><span>About</span></a>
+           <a href="./about.html"><span>Selected Work</span></a>
+        <a href="./blog.html"><span>Field Notes</span></a>  
+        </div>
+       
+            
     </nav>
+    <!-- End Navigation -->
+    <div id="message">
+        <img src='assets/closed.svg'/><img src='assets/open.svg'/>
+        <span><em></em></span>
+        <div id="message-inner">
+            <p>
+                Dear Reader,<br>
+                <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
+                    In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="./fieldnotes/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
+                Sending you my best,
+                <blockquote>Aarati<span id='blinking-cursor'></span></blockquote></p>
+        </div>
+        <div id="message-outer"></div>
+    </div>
+
     <!-- End Navigation -->
 
     <!-- MAIN CONTENT -->
@@ -70,7 +89,6 @@
             <li><a href="https://web.archive.org/web/20220331062250/https://earth6r.com/">Earth (with Earth) →</a> <span>#Web-Development</span></li>
             <li><a href="https://conifer.rhizome.org/aarati/web-development/20220919153159/https://miriamgallery.com/">Miriam Gallery (with Txtbooks) →</a>  <span>#Web-Development</span></li>
             <li><a href="https://conifer.rhizome.org/aarati/web-development/20220919153247/https://miriam.shoplightspeed.com/">Miriam Bookstore (with Txtbooks) →</a>  <span>#Web-Development</span></li>
-            <li><a href="https://web.archive.org/web/20210424060115/https://cloud9.support/">cloud9.support (with BUFU) →</a>  <span>#Web-Development</span></li>
             <li><a href="https://conifer.rhizome.org/aarati/web-development/20220919153323/https://cloud9.garden/">cloud9.garden (with BUFU) →</a>  <span>#Web-Development, #Generative-Design</span></li>
             <li><a href="https://veilmachine.com/E-Viction">E-VICTION (with Veil Machine) →</a> <span>#Web-Development, #Web-Design</span></li>
             <li><a href="https://www.txtbooks.us/permutations/">Permutations Book →</a>  <span>#Generative-Design</span></li>
@@ -87,8 +105,8 @@
 
 
 
-    <!-- Nav js-->
-    <script>
+       <!-- Nav js-->
+       <script>
         window.onload = function(){
 
             let open = document.querySelector("#message img:nth-child(1)");
@@ -108,6 +126,31 @@
                 document.querySelector("#message").classList.remove('on')
             })
         }
+        
+    </script>
+    <!-- image changing js -->
+    <script>
+    
+
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
     </script>
 </body>
 </html>

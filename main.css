@@ -64,7 +64,8 @@ main{
 }
 #gallery a{
     text-decoration: none;
-    max-width: 50%;
+    max-width: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
 }
 
 h1{
@@ -202,6 +203,23 @@ nav ul li{
 }
 #message img{
     cursor: pointer;
+}
+.project-img-group{
+    display: flex;
+    gap: 30px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+main .project-img-group > img{
+    flex-shrink: 1;
+    width: calc(33% - 30px);
+    flex-basis: calc(33% - 30px);
+    object-fit: contain;
+}
+main .project-img-group > .half{
+    width: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
 }
 nav a{
     text-decoration: none;

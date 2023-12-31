@@ -11,12 +11,43 @@
 
 </head>
 <body>
+    <svg display="none">
+        <defs>
+            <filter id="turbulence-1">
+             <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-2">
+             <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-3">
+             <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-4">
+             <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-5">
+             <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         </defs>
+      </svg>
     <!-- Navigation -->
     <nav>
-        <h1><a href="/">Aarati</a></h1>
-        <a href="./">Work</a>
-        <a href="./about.html">About</a>
-        <a href="./blog.html">Blog</a>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+           <a href="./about.html"><span>About</span></a>
+           <a href="./about.html"><span>Selected Work</span></a>
+        <a href="./blog.html"><span>Field Notes</span></a>  
+        </div>
+       
             
     </nav>
     <!-- End Navigation -->
@@ -47,7 +78,7 @@
         I primarily teach coding within an art and design context. <br>
         Here are some selected syllabi:      
         <ul>
-        	
+            <li class="label syllabi"><a href="https://machine-media.net">Machine Media: A Hands-On Introduction to Machine Learning and Generative Art →</a></li>
 			<li class="label syllabi"><a href="https://drive.google.com/file/d/1BjY5g6cghyYHaz1ZaeEZKkJcyy94UJru/view?usp=sharing">Digital Divination →</a></li>
             <li class="label syllabi"><a href="https://docs.google.com/document/d/1hbtQL3WXV-XhKK-K-NXPGWPSdNus5GOzYNraFnAQuZI/edit?usp=sharing">Data as Material →</a></li>
             <li class="label syllabi"><a href="https://docs.google.com/document/d/1yo5LAqk_4hEz9d9IAqrY0-aPWDJvdxIn7LuXuxje_Uo/edit?usp=sharing">Expanded Photography →</a></li>
@@ -70,27 +101,52 @@
 
 
 
-    <!-- Nav js-->
-    <script>
-        window.onload = function(){
-
-            let open = document.querySelector("#message img:nth-child(1)");
-            open.addEventListener("click", function(){
-                document.querySelector("#message").classList.add('on')
-            })
-            let open2 = document.querySelector("#message em");
-            open2.addEventListener("click", function(){
-                document.querySelector("#message").classList.add('on')
-            })
-            let close = document.querySelector("#message img:nth-child(2)");
-            close.addEventListener("click", function(){
-                document.querySelector("#message").classList.remove('on')
-            })
-            let close2 = document.querySelector("#message-outer");
-            close2.addEventListener("click", function(){
-                document.querySelector("#message").classList.remove('on')
-            })
-        }
-    </script>
+        <!-- Nav js-->
+        <script>
+            window.onload = function(){
+    
+                let open = document.querySelector("#message img:nth-child(1)");
+                open.addEventListener("click", function(){
+                    document.querySelector("#message").classList.add('on')
+                })
+                let open2 = document.querySelector("#message em");
+                open2.addEventListener("click", function(){
+                    document.querySelector("#message").classList.add('on')
+                })
+                let close = document.querySelector("#message img:nth-child(2)");
+                close.addEventListener("click", function(){
+                    document.querySelector("#message").classList.remove('on')
+                })
+                let close2 = document.querySelector("#message-outer");
+                close2.addEventListener("click", function(){
+                    document.querySelector("#message").classList.remove('on')
+                })
+            }
+            
+        </script>
+        <!-- image changing js -->
+        <script>
+        
+    
+            const onScrollStop = callback => {
+            let isScrolling;
+            window.addEventListener(
+                'scroll',
+                e => {
+                clearTimeout(isScrolling);
+                document.querySelector("main").classList.add('squiggle')
+                isScrolling = setTimeout(() => {
+                    callback();
+                }, 150);
+                },
+                false
+            );
+            };
+    
+            onScrollStop(() => {
+                document.querySelector("main").classList.remove('squiggle')
+            console.log('The user has stopped scrolling');
+            });
+        </script>
 </body>
 </html>

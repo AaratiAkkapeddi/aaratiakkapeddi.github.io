@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarati</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+</head>
+<body>
+    <svg display="none">
+        <defs>
+           <filter id="turbulence-1">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-2">
+            <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-3">
+            <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-4">
+            <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-5">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        </defs>
+      </svg>
+    <!-- Navigation -->
+    <nav>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+           <a href="./about.html"><span>About</span></a>
+           <a href="./about.html"><span>Selected Work</span></a>
+        <a href="./blog.html"><span>Field Notes</span></a>  
+        </div>
+       
+            
+    </nav>
+    <!-- End Navigation -->
+    <div id="message">
+        <img src='assets/closed.svg'/><img src='assets/open.svg'/>
+        <span><em></em></span>
+        <div id="message-inner">
+            <p>
+                Dear Reader,<br>
+                <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
+                    In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="./fieldnotes/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
+                Sending you my best,
+                <blockquote>Aarati<span id='blinking-cursor'></span></blockquote></p>
+        </div>
+        <div id="message-outer"></div>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+  
+        <h1>Recollections in Haldi & Light </h1><br>
+
+        <div class="project" id="akin">
+            <em>2020 - Code, Lumen Prints, Turmeric Anthotypes</em>
+            <p>Recollections in Haldi & Light uses a pre-trained machine learning depth-detection model to create silhouettes from my family photographs. These silhouettes are then used to produce digital negatives and printed on expired photo paper and turmeric anthotypes. The prints are meant to evoke a sense of shared memory and loss. The use of the turmeric anthotype process brings a ritual dimension to the work as turmeric (haldi) is considered an auspicious material and is also a familiar element in South Asian cuisine and culture.</p>
+            
+            <div class="project-img-group">
+                <img class="" src="assets/projects/haldi/BRW9C305B9E1BE0_000278_0000_Layer 1.jpeg"/>
+                <img class="" src="assets/projects/haldi/BRW9C305B9E1BE0_000281_0001_Layer 1.jpeg"/>
+                <img class="" src="assets/projects/haldi/BRW9C305B9E1BE0_000284_0001_Layer 0.jpeg"/>
+
+                <img class="half" src="assets/projects/haldi/BRW9C305B9E1BE0_000279_0001_Layer 1.jpeg"/>
+                <img class="half" src="assets/projects/haldi/BRW9C305B9E1BE0_000278_0001_Layer 0.jpeg"/>
+                <img class="half" src="assets/projects/haldi/BRW9C305B9E1BE0_000279_0000_Layer 0.jpeg"/>
+                <img class="half" src="assets/projects/haldi/BRW9C305B9E1BE0_000285_0000_Layer 1.jpeg"/>
+                <img class="half" src="assets/projects/haldi/BRW9C305B9E1BE0_000282_0000_Layer 1.jpeg"/>
+
+            </div><br><br>
+            <img class="main-img" alt="" src="assets/projects/haldi/DSC_1302.jpeg"/>
+            <span class="caption">Installation view.</span>
+            <img class="main-img" alt="" src="assets/projects/haldi/DSC_1317.jpeg"/>
+            <span class="caption">Installation view.</span>
+            <img class="main-img" alt="" src="assets/projects/haldi/DSC_1319.jpeg"/>
+            <span class="caption">Installation view.</span> 
+            <img class="main-img" alt="" src="assets/projects/haldi/DSC_1454.jpeg"/>
+            <span class="caption">Album.</span>          
+
+    <br><br>
+    <a href="/">← back to selected work</a>
+    </main>
+
+    <!-- Nav js-->
+    <script>
+        window.onload = function(){
+
+            let open = document.querySelector("#message img:nth-child(1)");
+            open.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let open2 = document.querySelector("#message em");
+            open2.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let close = document.querySelector("#message img:nth-child(2)");
+            close.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+            let close2 = document.querySelector("#message-outer");
+            close2.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+        }
+    </script>
+    <!-- image changing js -->
+    <script>
+    
+
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
+    </script>
+</body>
+</html>
+

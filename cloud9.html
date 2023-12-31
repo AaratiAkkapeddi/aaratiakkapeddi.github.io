@@ -10,11 +10,43 @@
 
 </head>
 <body>
+    <svg display="none">
+        <defs>
+           <filter id="turbulence-1">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-2">
+            <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-3">
+            <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-4">
+            <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-5">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        </defs>
+      </svg>
     <!-- Navigation -->
     <nav>
-        <h1><a href="/">AARATI AKKAPEDDI</a></h1>
-        <a href="./about.html">about</a>
-        <a href="./blog.html">blog</a>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+           <a href="./about.html"><span>About</span></a>
+           <a href="./about.html"><span>Selected Work</span></a>
+        <a href="./blog.html"><span>Field Notes</span></a>  
+        </div>
+       
             
     </nav>
     <!-- End Navigation -->
@@ -36,41 +68,24 @@
     <!-- MAIN CONTENT -->
     <main>
   
-        <h1>CLOUD9.GARDEN</h1><br>
+        <h1>CLOUD9.GARDEN (*Group Project)</h1><br>
 
         <div class="project" id="akin">
             <em>2020 - Code</em>
-            <p> 
-                
-                <a href='https://thephotographersgallery.org.uk/whats-on/akin-aarati-akkapeddi'>A·kin</a> looks at how photographic archives and family albums are seen and categorised by humans and machine vision systems. The project highlights the difficulties to grasp anthropological, historical and cultural notions about personal and collective identity when considering photographs as mere data points.  
+            <p>The CLOUD9 Memorial Garden is a space for collective remembrance with care, gentleness and respect. Pandemic times limit how we can gather to mourn and remember. During periods of mass loss and isolation, creating intentional spaces to enact and celebrate collective memory is vital. Our community continues to plant new seeds for all of ours that we have lost in this time, due to state violence, due to Covid and due to the continued systems centered on harming Black people, Indigenous people, brown people, low income people, trans people, undocumented people, and marginalized people. We invite you to transform personal grief into collective healing, growth and liberation. 
 
-                <br><br>The work is created using my personal family photographs from Tamil Nadu, as well as images from the Studies in Tamil Studio Archives and Society (stars.archive) Archive, a collection which investigates the history of South Indian studio photography between the 1880s and the 1980s. 
-                The installation includes groupings of photographs organized first by an image classification model (VGG16) and then further by my intuition. Each group is represented by a central node image, a composite averaging all of the images within the cluster. At the centre of the wall a video includes oral interviews with family members reflecting on the photographs, and S.T.A.R.S. Archive researchers sharing insights on the particularities of eastern studio archives and family albums in relationship with the western view. On the opposite wall are six gold risograph prints on black paper, each showcasing a composite image from a cluster. Along with the physical installation, I've created a new digital commission (<a href='https://unthinking.photography/projects/akin/'>https://unthinking.photography/projects/akin/</a>'). The interactive website invites visitors to pull apart each of the photographs included on the composites. Through this process, the provenance and protagonists of each image are revealed, along with other anthropological and cultural indicators. The contextualising information offers further understanding about the historically shifting notions of individual and collective representation within colonial and post-colonial contexts.
+                <br><br>The Cloud9.garden virtual memorial is a collaborative effort between myself, <a href="http://www.bufubyusforus.com/">BUFU</a>, Chiara Marcial Martinez, Zai Aliyu, and Melanie Hoff. <br><em>* My specific contributions included developing a system by which unique memorial flowers could be generated for each dedication.</em> This flower system uses p5js. You can visit the garden at <a href="https://cloud9.garden/">cloud9.garden</a>. 
                 <br><br>
-            <a href=https://stars.hypotheses.org/">Studies in Tamil Studio Archives and Society</a>(stars.archive) is a multidisciplinary research collective which aims to investigate the history of Tamil studio photography between the 1880s and the 1980s as well as to protect and promote the rich and vulnerable productions photographic productions.
-            </p>
-            <img class="main-img" alt="installation view: a large black wall with photographs arranged in a kolam pattern around a video screen." src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-6.jpg"/>
+                Websites are living things that need stewardship and care. Are you a web developer willing to help us with some issues we are currently facing with deprecation/maintainence? Please reach out at aarati.akkapeddi@gmail.com.
+                </p>
+            <img class="" alt="screenshot of cloud9 memorial site. A garden of unique flowers with names underneath each one." src="./assets/projects/c9/c9_3.png"/>
+            <img class="" alt="screenshot of cloud9 memorial site. A garden of unique flowers with names underneath each one." src="./assets/projects/c9/c9_4.png"/>
+            <img class="" alt="screenshot of cloud9 memorial site. A garden of unique flowers with names underneath each one." src="./assets/projects/c9/c9_5.png"/>
+            <img class="" alt="screenshot of cloud9 memorial site. A garden of unique flowers with names underneath each one." src="./assets/projects/c9/c9_0.png"/>
 
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-4.jpg"/>
-            <span class="caption">Installation view. Photograph by Ollie Harrop.</span>
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-20.jpg"/>
-            <span class="caption">Installation view. Photograph by Ollie Harrop.</span>
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-1.jpg"/>
-            <span class="caption">Installation view. Photograph by Ollie Harrop.</span>
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-10.jpg"/>
-            <span class="caption">gold risograph prints on black paper.  Photo by Ollie Harrop.</span>
-            <img src="assets/projects/akin/peel.gif"/>
-            <span class="caption">gif of website where you can pull apart composite images to see individual photographs and related information</span>
-            <img src="assets/projects/akin/akin_riso.JPG"/>
-            <span class="caption">gold risograph print on black paper of one of the clusters</span>
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-22.jpg"/>
-            <span class="caption">Photograph by Ollie Harrop.</span>
-            <!-- <img src="assets/projects/akin/diagram.jpg"/>
-            <span class="caption">Diagram of clusters</span> -->
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-15.jpg"/>
-            <span class="caption">close-up of video and clusters. Photo by Ollie Harrop.</span>
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-17.jpg"/>
-            <span class="caption">close-up of clusters. Photo by Ollie Harrop.</span>
+            <img class="mini" alt="flower generative design iterations sketches" src="./assets/projects/c9/c9_1.png"/>
+            <img class="mini" alt="screenshot of dedication submission form" src="./assets/projects/c9/c2.png"/>
+            <span class='caption'>flower generative design iterations & screenshot of dedication submission form</span>
     <br><br>
     <a href="/">← back to selected work</a>
     </main>
@@ -98,7 +113,29 @@
         }
     </script>
     <!-- image changing js -->
+    <script>
+    
 
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
+    </script>
 </body>
 </html>
 

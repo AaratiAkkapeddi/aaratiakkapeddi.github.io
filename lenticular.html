@@ -10,11 +10,43 @@
 
 </head>
 <body>
+    <svg display="none">
+        <defs>
+           <filter id="turbulence-1">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-2">
+            <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-3">
+            <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-4">
+            <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-5">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        </defs>
+      </svg>
     <!-- Navigation -->
     <nav>
-        <h1><a href="/">AARATI AKKAPEDDI</a></h1>
-        <a href="./about.html">about</a>
-        <a href="./blog.html">blog</a>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+           <a href="./about.html"><span>About</span></a>
+           <a href="./about.html"><span>Selected Work</span></a>
+        <a href="./blog.html"><span>Field Notes</span></a>  
+        </div>
+       
             
     </nav>
     <!-- End Navigation -->
@@ -41,36 +73,37 @@
         <div class="project" id="akin">
             <em>2023 - Lenticular prints, hair, plant matter</em>
             <p> 
-                
-                <a href='https://thephotographersgallery.org.uk/whats-on/akin-aarati-akkapeddi'>A·kin</a> looks at how photographic archives and family albums are seen and categorised by humans and machine vision systems. The project highlights the difficulties to grasp anthropological, historical and cultural notions about personal and collective identity when considering photographs as mere data points.  
-
-                <br><br>The work is created using my personal family photographs from Tamil Nadu, as well as images from the Studies in Tamil Studio Archives and Society (stars.archive) Archive, a collection which investigates the history of South Indian studio photography between the 1880s and the 1980s. 
-                The installation includes groupings of photographs organized first by an image classification model (VGG16) and then further by my intuition. Each group is represented by a central node image, a composite averaging all of the images within the cluster. At the centre of the wall a video includes oral interviews with family members reflecting on the photographs, and S.T.A.R.S. Archive researchers sharing insights on the particularities of eastern studio archives and family albums in relationship with the western view. On the opposite wall are six gold risograph prints on black paper, each showcasing a composite image from a cluster. Along with the physical installation, I've created a new digital commission (<a href='https://unthinking.photography/projects/akin/'>https://unthinking.photography/projects/akin/</a>'). The interactive website invites visitors to pull apart each of the photographs included on the composites. Through this process, the provenance and protagonists of each image are revealed, along with other anthropological and cultural indicators. The contextualising information offers further understanding about the historically shifting notions of individual and collective representation within colonial and post-colonial contexts.
-                <br><br>
-            <a href=https://stars.hypotheses.org/">Studies in Tamil Studio Archives and Society</a>(stars.archive) is a multidisciplinary research collective which aims to investigate the history of Tamil studio photography between the 1880s and the 1980s as well as to protect and promote the rich and vulnerable productions photographic productions.
+                Three lenticular diptychs: 
+                <ul>
+                    <li>A lenticular print depicting a photograph of myself being dressed up by my family as a barbie "bride" in the 1990's and a photograph from my grandmother's marriage at age twelve in 1933. The frame is decorated with plant matter and hair from myself, my mother, and grandmother.
+                    </li><br>
+                    <li> A lenticular print depicting a photograph of my grandmother holding my mother as a baby and a photograph of my mother holding me.The frame is decorated with plant matter and hair from myself, my mother, and grandmother.
+                    </li><br>
+                    <li>A lenticular print depicting a photograph of my grandmother and her sister from 2022 and a photograph of my grandmother and her sister in the 1970s. The frame is decorated with plant matter and hair from my grandmother.
+                    </li>
+            
+                </ul>
+              
             </p>
-            <img class="main-img" alt="installation view: a large black wall with photographs arranged in a kolam pattern around a video screen." src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-6.jpg"/>
-
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-4.jpg"/>
-            <span class="caption">Installation view. Photograph by Ollie Harrop.</span>
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-20.jpg"/>
-            <span class="caption">Installation view. Photograph by Ollie Harrop.</span>
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-1.jpg"/>
-            <span class="caption">Installation view. Photograph by Ollie Harrop.</span>
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-10.jpg"/>
-            <span class="caption">gold risograph prints on black paper.  Photo by Ollie Harrop.</span>
-            <img src="assets/projects/akin/peel.gif"/>
-            <span class="caption">gif of website where you can pull apart composite images to see individual photographs and related information</span>
-            <img src="assets/projects/akin/akin_riso.JPG"/>
-            <span class="caption">gold risograph print on black paper of one of the clusters</span>
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-22.jpg"/>
-            <span class="caption">Photograph by Ollie Harrop.</span>
-            <!-- <img src="assets/projects/akin/diagram.jpg"/>
-            <span class="caption">Diagram of clusters</span> -->
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-15.jpg"/>
-            <span class="caption">close-up of video and clusters. Photo by Ollie Harrop.</span>
-            <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-17.jpg"/>
-            <span class="caption">close-up of clusters. Photo by Ollie Harrop.</span>
+            <div class="project-img-group">
+                <img alt="" src="assets/projects/lenticulars/mom3.gif"/>
+                <img alt="" src="assets/projects/lenticulars/ammama.gif"/>
+                <img alt="" src="assets/projects/lenticulars/bamma.gif"/>
+            </div>
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5044.jpg"/>
+            <span class="caption">my paternal grandmother and grandfather's marriage portrait. She is 12 years old and he is 19 years old.</span>
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5069.jpg"/>
+            <span class="caption">me at age 5 or 6 being dressed up by my family in a barbie wedding gown</span>
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5041.jpg"/>
+            <span class="caption">my maternal grandmother holding my mother as a baby.</span> 
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5050.jpg"/>
+            <span class="caption">my mother holding me.</span>          
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5043.jpg"/>
+            <span class="caption">my maternal grandmother and her sister in 2022.</span>              
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5047.jpg"/>
+            <span class="caption">my maternal grandmother and her sister in the 1970s.</span> 
+            
+            
     <br><br>
     <a href="/">← back to selected work</a>
     </main>
@@ -98,7 +131,29 @@
         }
     </script>
     <!-- image changing js -->
+    <script>
+    
 
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
+    </script>
 </body>
 </html>
 
