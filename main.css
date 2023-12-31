@@ -344,6 +344,7 @@ main .caption{
     }
     nav div:nth-child(2){
         flex-basis: 66%;
+        align-items: center;
     }
     #gallery div{
         flex-wrap: wrap;
