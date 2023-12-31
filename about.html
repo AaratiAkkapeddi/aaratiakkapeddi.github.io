@@ -11,54 +11,72 @@
 
 </head>
 <body>
-    <div id='bg-nav'><div class="bg"></div></div>
-    <div class="bg"></div>
+    <svg display="none">
+        <defs>
+            <filter id="turbulence-1">
+             <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-2">
+             <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-3">
+             <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-4">
+             <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-5">
+             <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         </defs>
+      </svg>
     <!-- Navigation -->
     <nav>
-        <ul class="left">
-            <li><a href="/">AARATI AKKAPEDDI</a></li>
-            <li><div id="message">
-                <img src='assets/closed.svg'/><img src='assets/open.svg'/>
-                <span><em>A message for you</em></span>
-                <div id="message-inner">
-                    <p>
-                        Dear Reader,<br>
-                        <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
-                        In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="./fieldnotes/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
-                        Sending you my best,
-                        <blockquote>Aarati Akkapeddi<span id='blinking-cursor'></span></blockquote></p>
-                </div>
-                <div id="message-outer"></div>
-            </div></li>
-        </ul>
-        <ul class="right">
-            <li>
-              Currently Viewing:  
-                <select id="main-menu" autocomplete="off">
-                    <option value="./about.html">About</option>
-                    <option value="./">Selected Works</option>
-                    <option value="/fieldnotes/">Blog</option>
-                    <option value="./coding.html">Coding</option>
-                    <option value="./teaching.html">Teaching</option>
-                </select>
-            </li>
-      
-
-        </ul>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+           <a href="./about.html"><span>About</span></a>
+           <a href="./about.html"><span>Selected Work</span></a>
+        <a href="./blog.html"><span>Field Notes</span></a>  
+        </div>
+       
+            
     </nav>
+    <!-- End Navigation -->
+    <div id="message">
+        <img src='assets/closed.svg'/><img src='assets/open.svg'/>
+        <span><em></em></span>
+        <div id="message-inner">
+            <p>
+                Dear Reader,<br>
+                <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
+                    In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="./fieldnotes/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
+                Sending you my best,
+                <blockquote>Aarati<span id='blinking-cursor'></span></blockquote></p>
+        </div>
+        <div id="message-outer"></div>
+    </div>
+
     <!-- End Navigation -->
 
     <!-- MAIN CONTENT -->
     <main>
     
-        <img src="assets/me.JPG"/><br>
-        Aarati Akkapeddi<br>They/them<br>
-        aarati.akkapeddi@gmail.com<br>
+        <img src="assets/me.JPG"/>
+        <a href="mailto:aarati.akkapeddi@gmail.com" target="_blank">aarati.akkapeddi@gmail.com</a><br>
         <a href='https://docs.google.com/spreadsheets/d/1ntLn1Vycf5y2yhDftEH7s2YjY1oPxguHvnFr6Ft1hvY/edit#gid=0'>CV</a>, <a href="./blog.html">Blog</a>, <a href='https://www.instagram.com/memory__work/'>Instagram</a>, <a href="https://github.com/AaratiAkkapeddi">Github</a>, <a href="./teaching.html">Teaching</a><br>
         Location: Occupied Lenapehoking (NYC)<br>
         <a href="https://drive.google.com/file/d/1awujsVKe7IYXj42Yi_NLF-x-xMuc1otf/view">How to pronounce my name</a><br></br>
         <em>I would like to acknowledge the Lenni Lenape peoples who are the original and continued rightful stewards of the land that I love and on which I work and reside.</em><br><br>
-        I am a Telugu-American cross-disciplinary artist, coder, and educator based in Lenapehoking (Brooklyn, NY). I often use personal and institutional archival materials, combining computational and analog techniques like machine learning & printmaking to create artwork about intergenerational/collective memory. My creative work has been supported by institutions such as The Photographers' Gallery, ETOPIA Center for Art & Technology, Fotomuseum Winterthur, and LES Printshop. I work as a designer/developer for The Experimental Humanities Collaborative Network, creating digital spaces and tools.<span id='blinking-cursor'></span>
+        I am a Telugu-American cross-disciplinary artist, coder, and educator based in Lenapehoking (Brooklyn, NY). I often use personal and institutional archival materials, combining computational and analog techniques like machine learning & printmaking to create artwork about intergenerational/collective memory. My creative work has been supported by institutions such as The Photographers' Gallery, ETOPIA Center for Art & Technology, Fotomuseum Winterthur, and LES Printshop. I work as a designer/developer for The Experimental Humanities Collaborative Network, creating digital spaces and tools.
         <br><br>
         Selected Press:
         <ul>
@@ -90,11 +108,6 @@
     <!-- Nav js-->
     <script>
         window.onload = function(){
-            let select = document.querySelector("#main-menu")
-            select.selectedIndex = 0
-            select.addEventListener("change",function(){
-                window.location.href = this.value;
-            })
 
             let open = document.querySelector("#message img:nth-child(1)");
             open.addEventListener("click", function(){
@@ -113,6 +126,29 @@
                 document.querySelector("#message").classList.remove('on')
             })
         }
+    </script>
+     <script>
+    
+
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
     </script>
 </body>
 </html>

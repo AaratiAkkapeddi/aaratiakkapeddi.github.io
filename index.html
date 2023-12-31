@@ -6,194 +6,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarati</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="project.css">
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 
 </head>
 <body>
-    <div id='bg-nav'><div class="bg"></div></div>
-    <div class="bg"></div>
+    <svg display="none">
+        <defs>
+           <filter id="turbulence-1">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-2">
+            <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-3">
+            <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-4">
+            <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-5">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        </defs>
+      </svg>
     <!-- Navigation -->
     <nav>
-        <ul class="left">
-            <li><a href="/">AARATI AKKAPEDDI</a></li>
-            <li><div id="message">
-                <img src='assets/closed.svg'/><img src='assets/open.svg'/>
-                <span><em>A message for you</em></span>
-                <div id="message-inner">
-                    <p>
-                        Dear Reader,<br>
-                        <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
-                            In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="./fieldnotes/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
-                        Sending you my best,
-                        <blockquote>Aarati Akkapeddi<span id='blinking-cursor'></span></blockquote></p>
-                </div>
-                <div id="message-outer"></div>
-            </div></li>
-        </ul>
-        <ul class="right">
-            <li>
-              Currently Viewing:  
-                <select id="main-menu" autocomplete="off">
-                    <option value="./">Selected Works</option>
-                    <option value="./about.html">About</option>
-                    <option value="./fieldnotes/">Blog</option>
-                    <option value="./coding.html">Coding</option>
-                    <option value="./teaching.html">Teaching</option>
-                </select>
-            </li>
-            <li>
-                Current Project:  
-                  <select id="project-menu" autocomplete="off">
-                      <option value="#akin">A·kin</option>
-                      <option value="#ir">I knew that if I walked in your footsteps, it would become a ritual</option>
-                      <option value="#kolam">Kolam Series</option>
-                      <option value="#cloud">Cloud9 memorial</option>
-                      <!-- <option value="#goya">After Goya</option> -->
-                  </select>
-              </li>
-
-        </ul>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+           <a href="./about.html"><span>About</span></a>
+           <a href="./about.html"><span>Selected Work</span></a>
+        <a href="./blog.html"><span>Field Notes</span></a>  
+        </div>
+       
+            
     </nav>
     <!-- End Navigation -->
+    <div id="message">
+        <img src='assets/closed.svg'/><img src='assets/open.svg'/>
+        <span><em></em></span>
+        <div id="message-inner">
+            <p>
+                Dear Reader,<br>
+                <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
+                    At the top of this page you will find links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, and <a href="./fieldnotes/">blog</a>. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a><br>You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
+                Sending you my best,
+                <blockquote>Aarati<span id='blinking-cursor'></span></blockquote></p>
+        </div>
+        <div id="message-outer"></div>
+    </div>
+
 
     <!-- MAIN CONTENT -->
     <main>
-        <p class="intro-to-projects">Below are selected works of mine. Use the dropdown menu on the top right to jump to a specific project.</p>
-              <!-- PROJECT: Akin-->
-              <div class="project" id="akin">
-                <img class="main-img" alt="installation view: a large black wall with photographs arranged in a kolam pattern around a video screen." src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-6.jpg"/>
-                <h1>A·kin - in collaboration with stars.archive for <a href='https://thephotographersgallery.org.uk/'>The Photographers Gallery</a></h1><br>
-                <em>Oct 2022 - Code, Video, Digital Print, Risograph, Website</em>
-                <p> 
-                    
-                    <a href='https://thephotographersgallery.org.uk/whats-on/akin-aarati-akkapeddi'>A·kin</a> looks at how photographic archives and family albums are seen and categorised by humans and machine vision systems. The project highlights the difficulties to grasp anthropological, historical and cultural notions about personal and collective identity when considering photographs as mere data points.  
-    
-                    <br><br>The work is created using my personal family photographs from Tamil Nadu, as well as images from the Studies in Tamil Studio Archives and Society (stars.archive) Archive, a collection which investigates the history of South Indian studio photography between the 1880s and the 1980s. 
-                    The installation includes groupings of photographs organized first by an image classification model (VGG16) and then further by my intuition. Each group is represented by a central node image, a composite averaging all of the images within the cluster. At the centre of the wall a video includes oral interviews with family members reflecting on the photographs, and S.T.A.R.S. Archive researchers sharing insights on the particularities of eastern studio archives and family albums in relationship with the western view. On the opposite wall are six gold risograph prints on black paper, each showcasing a composite image from a cluster. Along with the physical installation, I've created a new digital commission (<a href='https://unthinking.photography/projects/akin/'>https://unthinking.photography/projects/akin/</a>'). The interactive website invites visitors to pull apart each of the photographs included on the composites. Through this process, the provenance and protagonists of each image are revealed, along with other anthropological and cultural indicators. The contextualising information offers further understanding about the historically shifting notions of individual and collective representation within colonial and post-colonial contexts.
-                    <br><br>
-                <a href=https://stars.hypotheses.org/">Studies in Tamil Studio Archives and Society</a>(stars.archive) is a multidisciplinary research collective which aims to investigate the history of Tamil studio photography between the 1880s and the 1980s as well as to protect and promote the rich and vulnerable productions photographic productions.
-                </p>
-                <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-4.jpg"/>
-                <span class="caption">Installation view. Photograph by Ollie Harrop.</span>
-                <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-20.jpg"/>
-                <span class="caption">Installation view. Photograph by Ollie Harrop.</span>
-                <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-1.jpg"/>
-                <span class="caption">Installation view. Photograph by Ollie Harrop.</span>
-                <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-10.jpg"/>
-                <span class="caption">gold risograph prints on black paper.  Photo by Ollie Harrop.</span>
-                <img src="assets/projects/akin/peel.gif"/>
-                <span class="caption">gif of website where you can pull apart composite images to see individual photographs and related information</span>
-                <img src="assets/projects/akin/akin_riso.JPG"/>
-                <span class="caption">gold risograph print on black paper of one of the clusters</span>
-                <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-22.jpg"/>
-                <span class="caption">Photograph by Ollie Harrop.</span>
-                <!-- <img src="assets/projects/akin/diagram.jpg"/>
-                <span class="caption">Diagram of clusters</span> -->
-                <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-15.jpg"/>
-                <span class="caption">close-up of video and clusters. Photo by Ollie Harrop.</span>
-                <img src="assets/projects/akin/TPG-DigitalProjects-Oct22-Web-17.jpg"/>
-                <span class="caption">close-up of clusters. Photo by Ollie Harrop.</span>
-            </div>
-        <!-- PROJECT: I knew that if I walked in your footsteps, it would become a ritual -->
-            <div class="project" id="ir">
-                <img alt="video still: a computer desktop with a window showing a photograph of two women and another window showing a fuzzy/painting-like image of a woman's face." class="main-img" src="assets/projects/ir/ir1.png"/>
-                <h1>I knew that if I walked in your footsteps, it would become a ritual</h1>
-                <em>May 2022 - Code, Video, Lumen & Cyanotype</em>
-                <p>For this work, I developed a machine learning model based on my own family photographs that is able to create its own images that combine and emulate characteristics of my family photos. I think of the model's remixing and approximating as a metaphor for personal and generational memory. I feel that our understanding of the past is always an approximation. Names are forgotten, moments are conflated with other ones. Memory is something that mutates over time and over generations. I think of this at times, as less of a fault and more of a healing fluidity that allows us to process the past in a way that's enmeshed with the context of the present. 
-                    <br><br>The form of this work is a video piece and series of prints. For the video, family members were asked to speak about specific photographs. Images generated from the machine learning model are animated using footage from these interviews. The facial expressions mimic the original expressions of the family member and the audio is from their original voice. The photographs that are the subject of the interviews are also shown alongside the speaker. Surrounding the video, are prints of the generated images mixed with actual family photographs.<br><br>
-                    You can read more about my process in <a href="https://docs.google.com/document/d/13auFC4LawO6rWaiUpcCemWiSTE7hZNCEUB_G9-dRprQ/edit?usp=sharing">this written piece.</a>
-                </p>
-                <img src="assets/projects/ir/ir2.png"/>
-                <span class="caption">still from video</span>
-                <img src="assets/projects/ir/ir3.png"/>
-                <span class="caption">still from video</span>
-                <img class="mini" src="assets/projects/ir/ir4.jpg"/>
-                <img class="mini" src="assets/projects/ir/ir5.jpg"/>
-                <span class="caption">close-ups of cyanotype and lumen prints</span>
-                <img class="mini" src="assets/projects/ir/ir6.jpg"/>
-                <img class="mini" src="assets/projects/ir/ir7.jpg"/>
-                <span class="caption">close-ups of cyanotype and lumen prints</span>
-                <img src="assets/projects/ir/ir10.JPG"/>
-                <span class="caption">installation at Center for Book Arts</span>
-                <img src="assets/projects/ir/ir11.JPG"/>
-                <span class="caption">installation at Center for Book Arts</span>
-                <div class="vimeo" style="padding:56.25% 0 0 0;position:relative; width: 100%;"><iframe src="https://player.vimeo.com/video/721567723?h=b62add3a7b&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js" async></script><br>
-                <span class="caption">video</span>
-            </div>
+  
 
-        <!-- PROJECT:Kolam Series-->
-        <div class="project" id="kolam">
-            <img class="main-img" alt="diagram and cyanotype of my mother" src="./assets/projects/ks/ks_0.png"/>
-            <h1>Kolam Series</h1><br>
-            <em>2020 - code, embossing on cyanotype, ongoing experiments.</em>
-            <p>Based on typical South Indian (dot) Kolam patterns, kolam designs were produced based on facial recognition data from family photographs. I took one photograph of my maternal grandmother, one of my mother and one of my paternal grandmother and translated each number in each corresponding facial recognition vector into a component of the kolam pattern, producing three distinct kolam designs. I then embossed these patterns onto cyanotype prints of the corresponding photographs.
-            </p>
-            <img alt="Detail photograph of embossing on an image of my paternal grandmother" src="./assets/projects/ks/ks_4.png" class="mini"/>
-             <img class='mini' alt="my maternal grandmother " src="./assets/projects/ks/ks_5.JPG"/>
-             <span class='caption'>Detail photograph of embossing on an image of my paternal grandmother and an embossing with my maternal grandmother</span>
-            <p> In addition to working with facial recognition data, I have also been developing systems of translating text to Pulli Kolams using binary codes as an intermediary step. Below you will see some examples of this as well and diagrams explaining the translation process.</p>
-            <img class="mini" alt="translating my late uncle's nickname into a kolam pattern" src="./assets/projects/ks/ks_2.png"/>
-            <img class="mini" alt="Sunprinting this pattern onto a Paan leaf to make an ephemeral memorial." src="./assets/projects/ks/ks_1.png"/>
-            <span class='caption'>translating my late uncle's nickname into a kolam pattern and sunprinting this pattern onto a Paan leaf to make an ephemeral memorial.</span>
-            <img class="mini" alt="An example of an alternative spiralized translation method." src="./assets/projects/ks/ks_3.jpg"/>
-            <span class='caption'>An example of an alternative spiralized translation method.</span></div>
+
+    <h1><em>selected work</em></h1><br><br><br>
+    <div id="gallery">
+        <div>
+        <a href="/akin.html">
+        <h4> <span>A·KIN</span><br><br>
+        <em>code, video, digital print, risograph, website</em>
+  
+        <br><br>
+        A·kin looks at how photographic archives and family albums are seen and categorised by humans and machine vision systems. The project highlights the difficulties to grasp anthropological, historical and cultural notions about personal and collective identity when considering photographs as mere data points.
+        </h4>
+        </a> 
+        <a href="/akin.html"><img src="./assets/projects/thumbs/akin.jpg"></a>   
         </div>
+
+        <div>
+        <a href="/swarajyalaxmi.html">
+        <h4> <span>SWARAJYALAXMI</span>
+        <br><br>
+        <em>code, performance, rice flour, turmeric, banana leaf, intaglio ink</em><br><br>
+        In my project Swarajyalaxmi, I developed a computer program that allows me to generate Kolam designs that are embedded with the names of my family. I primarily focus on my paternal grandmother’s name, Swarajyalaxmi, and then her mother and grandmother: Kameswaramma and Rajyalaxmi.
+        </h4>
+        </a> 
+        <a href="/swarajyalaxmi.html"><img src="./assets/projects/thumbs/Akkapeddi_Aarati_01.jpg"></a>   
         </div>
-        <!-- PROJECT:cloud -->
-        <div class="project" id="cloud">
-            <img class="main-img" alt="screenshot of cloud9 memorial site. A garden of unique flowers with names underneath each one." src="./assets/projects/c9/c9_0.png"/>
 
-            <h1>Cloud9.garden (*Group Project)</h1><br>
-            <em>2020 - Website, generative system.</em>
-            <p>The CLOUD9 Memorial Garden is a space for collective remembrance with care, gentleness and respect. Pandemic times limit how we can gather to mourn and remember. During periods of mass loss and isolation, creating intentional spaces to enact and celebrate collective memory is vital. Our community continues to plant new seeds for all of ours that we have lost in this time, due to state violence, due to Covid and due to the continued systems centered on harming Black people, Indigenous people, brown people, low income people, trans people, undocumented people, and marginalized people. We invite you to transform personal grief into collective healing, growth and liberation. 
+        <div>
+        <a href="/ritual.html">
+        <h4> <span>I KNEW THAT IF I WALKED IN YOUR FOOTSTEPS, IT WOULD BECOME A RITUAL</span>
+        <br><br>
+        <em>code, cyanolumen prints, video</em>
+        <br><br>
+        For this work, I developed a machine learning model based on my own family photographs that is able to create its own images that combine and emulate characteristics of my family photos. I think of the model's remixing and approximating as a metaphor for personal and generational memory. I feel that our understanding of the past is always an approximation. Names are forgotten, moments are conflated with other ones. Memory is something that mutates over time and over generations. I think of this at times, as less of a fault and more of a healing fluidity that allows us to process the past in a way that's enmeshed with the context of the present.
 
-                <br><br>The Cloud9.garden virtual memorial is a collaborative effort between myself, <a href="http://www.bufubyusforus.com/">BUFU</a>, Chiara Marcial Martinez, Zai Aliyu, and Melanie Hoff. <br><em>* My specific contributions included developing a system by which unique memorial flowers could be generated for each dedication.</em> This flower system uses p5js. You can visit the garden at <a href="https://cloud9.garden/">cloud9.garden</a>. 
+        </h4>
+        </a> 
+        <a href="/ritual.html"><img src="./assets/projects/thumbs/4file.png"></a>   
+        </div>
+
+        <div>
+        <a href="/foliage.html">
+        <h4> <span>FAUX FOLIAGE</span>
+        <br><br>
+        <em>code, silkscreen, plexiglass, digital print</em>
+        <br><br>
+        A machine learning model is trained on a scientific dataset of leaf photographs (The PlantVillage dataset) and slowly learns to produce its own leaves. This print of “specimens” showcases its output. Some leaves are in the early stages of learning, appearing as abstract blobs, while others are much more realistic, but feature oddities such as double stems or unlikely curvatures. A plexiglass overlay highlights these "mistakes."
+
+
+        </h4>
+        </a> 
+        <a href="/foliage.html"><img src="./assets/projects/thumbs/3file.jpeg"></a>   
+        </div>
+
+
+        <div>
+        <a href="/lenticular.html">
+        <h4> <span>LENTICULARS</span><br><br>
+        <em>lenticular prints, hair, plant matter</em><br><br>
+        Three lenticular diptychs of family photographs. Together, they reveal aspects of the relationships and restrictions of women in my family.
+        </h4>
+        </a> 
+        <a href="/lenticular.html"><img src="./assets/projects/thumbs/bamma.gif"></a>   
+        </div>
+ 
+
+        <div>
+        <a href="/cloud9.html">
+        <h4> <span>CLOUD9.GARDEN</span>
+            <br><br>
+            <em>*group project, code</em>
+            <br><br>
+            The CLOUD9 Memorial Garden is a space for collective remembrance with care, gentleness and respect. Pandemic times limit how we can gather to mourn and remember. During periods of mass loss and isolation, creating intentional spaces to enact and celebrate collective memory is vital.
+        </h4>
+        </a> 
+        <a href="/haldi.html"><img src="./assets/projects/thumbs/2file.jpg"></a>   
+        </div>
+
+        <div>
+            <a href="/haldi.html">
+            <h4> <span>Recollections in Haldi & Light</span>
                 <br><br>
-                Sadly, due to this website's dependency on Airtable, this memorial will become defunct in November 2022. Willing to help us save it? Please reach out at aarati.akkapeddi@gmail.com.
-                </p>
-            <img class="mini" alt="flower generative design iterations sketches" src="./assets/projects/c9/c9_1.png"/>
-            <img class="mini" alt="screenshot of dedication submission form" src="./assets/projects/c9/c2.png"/>
-            <span class='caption'>flower generative design iterations & screenshot of dedication submission form</span>
-        </div>
-        </div>
-        <!-- PROJECT: After Goya -->
-        <!-- <div class="project" id="goya">
-            <img class="main-img" alt="intaglio print of ml generated image" src='./assets/projects/ag/ag_0.jpeg'/>
-
-            <h1>After Goya</h1><br>
-            <em>January 2020 - Code, Intaglio.</em>
-            <p>This work was created with the help of El Museo Goya Fundación Ibercaja as part of a residency with Etopia Center for Art & Technology in Zaragoza, Spain. A generative adversarial network is trained on Goya's etchings from Los Caprichos, Los Desastres de la Guerra, & Los Disparates. The outputs are used to then laser etch plates and create intaglio prints. In training a machine learning model on Goya’s etchings, I was interested in generating images that would still reflect an aesthetic essence from the originals. While the generated images are quite abstract, features such the use of chiaroscuro and the compositional structure still carry through.</p>
-            <img class="mini" alt="intaglio print of ml generated image" src='./assets/projects/ag/ag_1.jpeg'/>
-            <img class="mini" alt="gallery view of several etchings" src='./assets/projects/ag/ag_2.jpeg'/>
-            <span class='image-caption'>etching & gallery view (photo taken by Julian Fallas)</span>
-            <img class="mini" alt="comparison with original etchings showing distorted figures" src='./assets/projects/ag/ag_3.png'/>
-            <img class="mini" alt="comparison with original etchings showing cross-hatching techniques" src='./assets/projects/ag/ag_4.png'/>
-            <img class="mini" alt="comparison with original etchings showing compositional similarities" src='./assets/projects/ag/ag_5.png'/>
-            <span class='image-caption'>comparison with original etchings</span>
-        
-
-           
-     </div>
-        </div> -->
-        <!-- PROJECT: -->
-        <!-- PROJECT: -->
-    </main>
+                <em>code, lumen prints, turmeric anthotypes</em>
+                <br><br>
+                Recollections in Haldi & Light uses a pre-trained machine learning depth-detection model to create silhouettes from my family photographs. These silhouettes are then used to produce digital negatives and printed on expired photo paper and turmeric anthotypes.            </h4>
+            </a> 
+            <a href="/cloud9.html"><img src="./assets/projects/thumbs/haldi.jpg"></a>   
+            </div>
 
 
+
+    </div>
+</main>
 
     <!-- Nav js-->
     <script>
         window.onload = function(){
-            let select = document.querySelector("#main-menu")
-            select.selectedIndex = 0
-            select.addEventListener("change",function(){
-                window.location.href = this.value;
-            })
-            let pm = document.querySelector("#project-menu")
-            pm.addEventListener("change",function(){
-                window.location.href = window.location.href.split("#")[0] + this.value;
-            })
 
             let open = document.querySelector("#message img:nth-child(1)");
             open.addEventListener("click", function(){
@@ -212,54 +183,32 @@
                 document.querySelector("#message").classList.remove('on')
             })
         }
+        
     </script>
     <!-- image changing js -->
     <script>
-        /*"#ir">I knew that if I walked in your footsteps, it would become a ritual</option>
-                      <option value="#akin">A·kin</option>
-                      <option value="#kolam">Kolam Series</option>
-                      <option value="#cloud">Cloud9 memorial</option>
-                      <option value="#goya"*/
-        let current = '#ir'
-         window.addEventListener("scroll", function() {
-            let targets = document.querySelectorAll("main img");
-            let ir = document.getElementById("ir")
-            let akin = document.getElementById("akin")
-            let kolam = document.getElementById("kolam")
-            let cloud = document.getElementById("cloud")
-            // let goya = document.getElementById("goya")
-            const $select = document.querySelector('#project-menu');
+    
 
-            // let bg = null;
-           
-            if (window.scrollY > (akin.offsetTop- 20)) {
-                $select.value = '#akin'
-            }
-            if (window.scrollY > (ir.offsetTop - 20)) {
-                $select.value = '#ir'
-            }
-            if (window.scrollY > (kolam.offsetTop- 20)) {
-                $select.value = '#kolam'
-            }
-            if (window.scrollY > (cloud.offsetTop- 20)) {
-                $select.value = '#cloud'
-            }
-            // if (window.scrollY > (goya.offsetTop- 20)) {
-            //     $select.value = '#goya'
-            // }
-            for(let i = 0; i < targets.length; i++){
-                let elementTarget = targets[i]
-                if (window.scrollY > (elementTarget.offsetTop)) {
-                  bg = elementTarget.src;
-                }
-            }
-            // if(bg){
-            //     let bgs = document.querySelectorAll('.bg');
-            //     for(let i = 0; i < bgs.length; i++){
-            //         bgs[i].style.backgroundImage = "url(" + bg + ")"
-            //     }
-            // }
-         });
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
     </script>
 </body>
 </html>
+

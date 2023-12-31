@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarati</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+</head>
+<body>
+    <svg display="none">
+        <defs>
+           <filter id="turbulence-1">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-2">
+            <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-3">
+            <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-4">
+            <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-5">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        </defs>
+      </svg>
+    <!-- Navigation -->
+    <nav>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+           <a href="./about.html"><span>About</span></a>
+           <a href="./about.html"><span>Selected Work</span></a>
+        <a href="./blog.html"><span>Field Notes</span></a>  
+        </div>
+       
+            
+    </nav>
+    <!-- End Navigation -->
+    <div id="message">
+        <img src='assets/closed.svg'/><img src='assets/open.svg'/>
+        <span><em></em></span>
+        <div id="message-inner">
+            <p>
+                Dear Reader,<br>
+                <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
+                    In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="./fieldnotes/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
+                Sending you my best,
+                <blockquote>Aarati<span id='blinking-cursor'></span></blockquote></p>
+        </div>
+        <div id="message-outer"></div>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+  
+        <h1>CLOUD9.GARDEN (*Group Project)</h1><br>
+
+        <div class="project" id="akin">
+            <em>2020 - Code</em>
+            <p>The CLOUD9 Memorial Garden is a space for collective remembrance with care, gentleness and respect. Pandemic times limit how we can gather to mourn and remember. During periods of mass loss and isolation, creating intentional spaces to enact and celebrate collective memory is vital. Our community continues to plant new seeds for all of ours that we have lost in this time, due to state violence, due to Covid and due to the continued systems centered on harming Black people, Indigenous people, brown people, low income people, trans people, undocumented people, and marginalized people. We invite you to transform personal grief into collective healing, growth and liberation. 
+
+                <br><br>The Cloud9.garden virtual memorial is a collaborative effort between myself, <a href="http://www.bufubyusforus.com/">BUFU</a>, Chiara Marcial Martinez, Zai Aliyu, and Melanie Hoff. <br><em>* My specific contributions included developing a system by which unique memorial flowers could be generated for each dedication.</em> This flower system uses p5js. You can visit the garden at <a href="https://cloud9.garden/">cloud9.garden</a>. 
+                <br><br>
+                Websites are living things that need stewardship and care. Are you a web developer willing to help us with some issues we are currently facing with deprecation/maintainence? Please reach out at aarati.akkapeddi@gmail.com.
+                </p>
+            <img class="" alt="screenshot of cloud9 memorial site. A garden of unique flowers with names underneath each one." src="./assets/projects/c9/c9_3.png"/>
+            <img class="" alt="screenshot of cloud9 memorial site. A garden of unique flowers with names underneath each one." src="./assets/projects/c9/c9_4.png"/>
+            <img class="" alt="screenshot of cloud9 memorial site. A garden of unique flowers with names underneath each one." src="./assets/projects/c9/c9_5.png"/>
+            <img class="" alt="screenshot of cloud9 memorial site. A garden of unique flowers with names underneath each one." src="./assets/projects/c9/c9_0.png"/>
+
+            <img class="mini" alt="flower generative design iterations sketches" src="./assets/projects/c9/c9_1.png"/>
+            <img class="mini" alt="screenshot of dedication submission form" src="./assets/projects/c9/c2.png"/>
+            <span class='caption'>flower generative design iterations & screenshot of dedication submission form</span>
+    <br><br>
+    <a href="/">← back to selected work</a>
+    </main>
+
+    <!-- Nav js-->
+    <script>
+        window.onload = function(){
+
+            let open = document.querySelector("#message img:nth-child(1)");
+            open.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let open2 = document.querySelector("#message em");
+            open2.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let close = document.querySelector("#message img:nth-child(2)");
+            close.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+            let close2 = document.querySelector("#message-outer");
+            close2.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+        }
+    </script>
+    <!-- image changing js -->
+    <script>
+    
+
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
+    </script>
+</body>
+</html>
+

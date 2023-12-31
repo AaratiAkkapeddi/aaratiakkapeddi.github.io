@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarati</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+</head>
+<body>
+    <svg display="none">
+        <defs>
+           <filter id="turbulence-1">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-2">
+            <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-3">
+            <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-4">
+            <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-5">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        </defs>
+      </svg>
+    <!-- Navigation -->
+    <nav>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+           <a href="./about.html"><span>About</span></a>
+           <a href="./about.html"><span>Selected Work</span></a>
+        <a href="./blog.html"><span>Field Notes</span></a>  
+        </div>
+       
+            
+    </nav>
+    <!-- End Navigation -->
+    <div id="message">
+        <img src='assets/closed.svg'/><img src='assets/open.svg'/>
+        <span><em></em></span>
+        <div id="message-inner">
+            <p>
+                Dear Reader,<br>
+                <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
+                    In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="./fieldnotes/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.akkapeddi@gmail.com">aarati.akkapeddi@gmail.com</a></blockquote>
+                Sending you my best,
+                <blockquote>Aarati<span id='blinking-cursor'></span></blockquote></p>
+        </div>
+        <div id="message-outer"></div>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+  
+        <h1>LENTICULARS</h1><br>
+
+        <div class="project" id="akin">
+            <em>2023 - Lenticular prints, hair, plant matter</em>
+            <p> 
+                Three lenticular diptychs: 
+                <ul>
+                    <li>A lenticular print depicting a photograph of myself being dressed up by my family as a barbie "bride" in the 1990's and a photograph from my grandmother's marriage at age twelve in 1933. The frame is decorated with plant matter and hair from myself, my mother, and grandmother.
+                    </li><br>
+                    <li> A lenticular print depicting a photograph of my grandmother holding my mother as a baby and a photograph of my mother holding me.The frame is decorated with plant matter and hair from myself, my mother, and grandmother.
+                    </li><br>
+                    <li>A lenticular print depicting a photograph of my grandmother and her sister from 2022 and a photograph of my grandmother and her sister in the 1970s. The frame is decorated with plant matter and hair from my grandmother.
+                    </li>
+            
+                </ul>
+              
+            </p>
+            <div class="project-img-group">
+                <img alt="" src="assets/projects/lenticulars/mom3.gif"/>
+                <img alt="" src="assets/projects/lenticulars/ammama.gif"/>
+                <img alt="" src="assets/projects/lenticulars/bamma.gif"/>
+            </div>
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5044.jpg"/>
+            <span class="caption">my paternal grandmother and grandfather's marriage portrait. She is 12 years old and he is 19 years old.</span>
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5069.jpg"/>
+            <span class="caption">me at age 5 or 6 being dressed up by my family in a barbie wedding gown</span>
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5041.jpg"/>
+            <span class="caption">my maternal grandmother holding my mother as a baby.</span> 
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5050.jpg"/>
+            <span class="caption">my mother holding me.</span>          
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5043.jpg"/>
+            <span class="caption">my maternal grandmother and her sister in 2022.</span>              
+            <img class="main-img" alt="" src="assets/projects/lenticulars/IMG_5047.jpg"/>
+            <span class="caption">my maternal grandmother and her sister in the 1970s.</span> 
+            
+            
+    <br><br>
+    <a href="/">← back to selected work</a>
+    </main>
+
+    <!-- Nav js-->
+    <script>
+        window.onload = function(){
+
+            let open = document.querySelector("#message img:nth-child(1)");
+            open.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let open2 = document.querySelector("#message em");
+            open2.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let close = document.querySelector("#message img:nth-child(2)");
+            close.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+            let close2 = document.querySelector("#message-outer");
+            close2.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+        }
+    </script>
+    <!-- image changing js -->
+    <script>
+    
+
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
+    </script>
+</body>
+</html>
+
