@@ -59,14 +59,15 @@ main{
     margin:0;
     font-weight: normal;
     text-decoration:none;
-    flex-basis: calc(50% - 30px);
+    max-width: calc(100% - 30px);
 
 }
 #gallery a{
     text-decoration: none;
-    max-width: calc(50% - 30px);
-    flex-basis: calc(50% - 30px);
+    max-width: calc(50%);
+    flex-basis: calc(50%);
 }
+
 
 h1{
     margin:0;
@@ -346,6 +347,9 @@ main .caption{
     }
     #gallery div{
         flex-wrap: wrap;
+    }
+    #gallery h4{
+        max-width: calc(100% - 0px);
     }
     #gallery a{
         max-width: calc(100% - 0px);
