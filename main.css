@@ -201,6 +201,7 @@ nav ul li{
     display: none;
     left:2px;
 }
+
 #message img{
     cursor: pointer;
 }
@@ -325,40 +326,44 @@ main .caption{
 }
 /* MOBILE */
 @media(max-width:900px){
-    body{
+    body, h1,h4, nav h1, nav a{
         font-size:14px;
     }
-    nav ul:first-child li:first-child{
-        font-size:12px;
-    }
-    nav ul:last-child, nav ul select{
-        font-size:12px;
-    }
-    nav ul{
-        flex-basis:45%;
-        width:45%;
-    }
+   
     nav ul select{ 
         max-width: 25%;
     }
     #message-inner{
         max-width: calc(100% - 85px);
-        top: 75px;
+        bottom: 75px;
         left:15px;
     }
-    
+    nav div:first-child{
+        flex-basis: 33%;
+    }
+    nav div:nth-child(2){
+        flex-basis: 66%;
+    }
+    #gallery div{
+        flex-wrap: wrap;
+    }
+    #gallery a{
+        max-width: calc(100% - 0px);
+        flex-basis: calc(100% - 0px);
+        margin-bottom: 30px;
+    }
+    #gallery h4 span{
+        text-decoration: underline;
+    }
+}
 
-}
-@media(max-width: 362px){
- #message em{
-    font-size: 10px;
- }
-}
-@media(max-width: 281px){
-    nav,nav ul:first-child li:first-child, nav ul:last-child, nav ul select,#message em{
-        font-size:8px;
+@-moz-document url-prefix() {
+    a:hover {
+      text-shadow: 4px 4px 40px rgba(0, 0, 0, 0.676);
     }
-    #message img{
-        width:15px;
-    }
-}
+  }
+
+_::-webkit-full-page-media, _:future, :root .squiggle {
+
+    animation:none
+  }
