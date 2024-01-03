@@ -49,6 +49,9 @@
        
             
     </nav>
+    <div id="color-controls">
+        <img src='assets/sun.svg'/><img src='assets/moon.svg'/>
+    </div>
     <!-- End Navigation -->
     <div id="message">
         <img src='assets/closed.svg'/><img src='assets/open.svg'/>
@@ -103,6 +106,16 @@
                 document.querySelector("#message").classList.remove('on')
             })
         }
+    </script>
+    <script>
+        let sun = document.querySelector("#color-controls");
+        sun.addEventListener("click", function(){
+            if(document.body.classList.contains('dark-mode')){
+                document.body.classList.remove('dark-mode')
+            }else{
+                document.body.classList.add('dark-mode')
+            }
+        })
     </script>
     <!-- image changing js -->
     <script>
