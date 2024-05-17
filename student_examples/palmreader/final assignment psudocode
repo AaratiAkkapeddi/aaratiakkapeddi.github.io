@@ -1,0 +1,24 @@
+create an array with [a variety of readings];
+
+function setup(){
+	createCanvas(windowWidth, windowHeight);
+	load hand image 
+	load any other images for fortunes/links to return to homepage or move foreward
+}
+
+function draw(){
+	hand image
+	mouseClicked{
+		draw ellipse following the mouse;
+
+	when link is pressed{
+	go to another page using html with fortune 
+	
+
+	on new page  
+	display random(myarray);
+	}
+	
+	}
+}
+

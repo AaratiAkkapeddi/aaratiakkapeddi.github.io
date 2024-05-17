@@ -1,0 +1,70 @@
+
+html{
+	background-image: url(./images/emptybackground.jpg);
+	background-size:100%;
+
+
+}
+
+body{
+	position: absolute;
+width: 1500px;
+height: 85px;
+left: -119px;
+top: 40%; 
+line-height:55pt;
+font-size: 27pt;
+text-decoration:none;
+text-align: center;
+
+}
+
+body:hover{
+	color: #F3E1CD;
+}
+
+
+a{
+text-decoration:none;
+font-family: Georgia;
+color: #A5322A;
+
+
+
+
+}
+
+#link:hover{
+	color: #F3E1CD;
+}
+
+a:hover{
+	color: #F3E1CD;
+}
+
+h1{
+font-family:Georgia;
+color: #F3E1CD;
+position: absolute;
+width: 500px;
+height: 15px;
+left: 500px;
+top: -150px; 
+font-size:32pt;
+line-height: 36pt;
+/*text-align: center;	
+*/}
+
+
+
+h1:hover{
+	color: #F0D474;
+}
+a:visited{
+
+font-family: Georgia;
+color: #D68551;
+
+}
+
+
