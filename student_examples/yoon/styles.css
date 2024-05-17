@@ -1,0 +1,25 @@
+#rectangle {
+  position :absolute;
+  height: 789px;
+  width: 1440px;
+  background-color: rgb(255,255,255);
+  mix-blend-mode:color-burn;
+  top:0;
+  left:0;
+  z-index: 10;
+  transition:1s;
+}
+
+/*css transition*/
+
+
+#frame{
+	position:absolute;
+	height: 789px;
+  width: 1440px;
+  background-image: url('./room.png');;
+  background-size:100%;
+   top:0;
+  left:0;
+}
+
