@@ -83,7 +83,7 @@ a:hover > *{
 main{
     display: block;
     margin: 100px auto;
-    max-width: calc(100% - 260px);
+    max-width: calc(100% - 380px);
 }
 #gallery{
     display: flex;
