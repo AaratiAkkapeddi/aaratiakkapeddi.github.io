@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarati</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+</head>
+<body>
+    <svg display="none">
+        <defs>
+           <filter id="turbulence-1">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-2">
+            <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-3">
+            <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-4">
+            <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-5">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        </defs>
+      </svg>
+    <!-- Navigation -->
+    <nav>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+            <a href="./about.html"><span>About</span></a>
+            <a href="/"><span>Selected Work</span></a>
+            <a href="https://blog.aarati.online/"><span>Process</span></a>  
+        </div>
+       
+            
+    </nav>
+    <div id="color-controls">
+        <img alt="sun icon for changing to light mode" src='assets/sun.svg'/><img alt="moon icon for changing to dark mode" src='assets/moon.svg'/>
+    </div>
+    <!-- End Navigation -->
+    <div id="message">
+        <img alt="envelope icon" src='assets/closed.svg'/><img alt="envelope icon" src='assets/open.svg'/>
+        <span><em></em></span>
+        <div id="message-inner">
+            <p>
+                Dear Reader,<br>
+                <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
+                    In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="https://blog.aarati.online/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.online@proton.me">aarati.online@proton.me</a></blockquote>
+                Sending you my best,
+                <blockquote>Aarati<span id='blinking-cursor'></span></blockquote></p>
+        </div>
+        <div id="message-outer"></div>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+  
+        <h1>IN THE BELLY OF THE BEAST</h1><br>
+
+        <div class="project" id="akin">
+            <em>Oct 2024 - 3D, Video, Artist books, Porcelain, Risograph, Website</em>
+            <p> 
+                
+                <a href='https://bellyofthebeast.online'>In The Belly of the Beast</a> is a multifaceted artwork that includes an interactive website, two artist books, and porcelain bookends. The work is inspired by Tipu's Tiger, a famous automaton depicting a tiger mauling a British soldier, which was seized from Tipu Sultan in 1799 and now resides at the V&A Museum in London. A central feature of the website is a 3D scan of Tipu's Tiger, captured using my cell phone. When visitors explore the interior of the tiger's belly, they encounter videos, including footage of the Robert Clive statue in London and the Clive Museum at Powis Castle, Wales, among others. While inside the "belly of the beast," viewers are invited to symbolically "feed the tiger."  
+
+                <br><br>Robert Clive, a key figure in establishing the British East India Company's rule in India, is associated with the Bengal famine, during which nearly 3 million people died of starvation. The Clive collection at Powis Castle contains many of Tipu Sultan’s personal belongings.
+                <br><br>One of the accompanying artist books is an accordion-fold design, modeled after Tipu's Tiger but reimagined in an upright position. When opened, the book splits the tiger's belly, revealing the figure of Robert Clive. The porcelain bookends were cast from 3D-printed molds of the repositioned tiger scan. The larger book delves into themes such as tiger hunting in colonial India, the tiger as a symbol of resistance and strength, and the broader meaning of being "in the belly of the beast."
+                <br><br>Research for this project was conducted during a residency with the Vasari Research Centre for Art and Technology and supported by a grant from the <a href="https://ehcn.bard.edu" target="_blank">Experimental Humanities Collaborative Network.</a> 
+                <br><br>Thank you to Michelle Wen for use of her kiln and studio to create my porcelain tigers and thank you to my teachers, Hadley Hill, Sheryl Oppenheim, María Verónica San Martín, Sarah Nicholls, Elizabeth Castaldo & Roni Gross at The Center For Book Arts for giving me the skills to create my artists books.
+            </p>
+            <img src="assets/projects/bob/website.png" alt="a screenshot of the interactive website with a bright red 3d model of tipus tiger in the center"/>
+            <img src="assets/projects/bob/website_gif.gif" alt="we enter the belly of the red tiger to see robert clive"/>
+            <img src="assets/projects/bob/box1.JPG" alt="a tan clamshell book box with in the belly of the beast hot stamped on it"/>
+            <img src="assets/projects/bob/box2.JPG" alt="a tan clamshell book box with in the belly of the beast hot stamped on it"/>
+            <img src="assets/projects/bob/box3.JPG" alt="a close up of a hand unwrapping a colorful book from the box"/>
+            <img src="assets/projects/bob/accordion.JPG" alt="an bright red accordion book with a tiger molded on the cover"/>
+            <img src="assets/projects/bob/accordion1.JPG" alt="an bright red accordion book with a tiger molded on the cover"/>
+            <img src="assets/projects/bob/accordion2.JPG" alt="an bright red accordion book with a tiger molded on the cover. Inside the tiger's belly is Robert Clive"/>
+            <img src="assets/projects/bob/accordion3.JPG" alt="an bright red accordion book with a tiger molded on the cover. Inside the tiger's belly is Robert Clive being split in half to reveal the text 'I saw Robert Clive//I saw myself in the belly of the beast'"/>
+            <img src="assets/projects/bob/accordion4.JPG" alt="an bright red accordion book with a tiger molded on the cover. Inside the tiger's belly is Robert Clive being split in half to reveal the text 'I saw Robert Clive//I saw myself in the belly of the beast'"/>
+            <img src="assets/projects/bob/book1.JPG" alt="a marbled book cover with a statue molded on the cover of a tiger eating a man"/>
+            <img src="assets/projects/bob/bookwithtigers1.JPG" alt="a marbled book cover with a statue molded on the cover of a tiger eating a man"/>
+            <img src="assets/projects/bob/tigers.JPG" alt="porcelain tigers"/>
+            <img src="assets/projects/bob/tiger.JPG" alt="porcelain tigers"/>
+            <img src="assets/projects/bob/0.jpg" alt="a flat scan of the inside cover of the book. Tiger stripes on the left, a 3d scan of a tiger statue on the right"/>
+            <img src="assets/projects/bob/1.jpeg" alt="a flat scan of the inside cover. A folded paper opens to show tipus tiger devouring modi with the words 'whether west or whether east, i'm in the belly of the beast'"/>
+            <img src="assets/projects/bob/2.jpg" alt="red text on a spread of this book"/>
+            <img src="assets/projects/bob/3.jpg" alt="red triangles forming an unwrapped version of the 3d scan and textures">
+            <img src="assets/projects/bob/4.jpg" alt="black and white photos of srirangapatnam">
+            <img src="assets/projects/bob/5.jpg" alt="duotone red photos of powis castle and on the right, a popup error over the treaty of the convention for promoting universally reproductions of works of art."/>
+            <img src="assets/projects/bob/6.jpg" alt="red photos of tiger skins from powis"/>
+            <img src="assets/projects/bob/bookpage_2.JPG" alt="red photos of tiger skins from powis"/>
+            <img src="assets/projects/bob/7.jpg" alt="warped photos of tiger skins"/>
+            <img src="assets/projects/bob/8.jpg" alt="a red lithophane of brittania slaying a tiger"/>
+            <img src="assets/projects/bob/book_page3.JPG" alt="a red lithophane of brittania slaying a tiger"/>
+            <img src="assets/projects/bob/9.jpg" alt="black photos of tiger teeth and red photos of colonial tiger hunting"/>
+            <img src="assets/projects/bob/book_page4.JPG" alt="black photos of tiger teeth and red photos of colonial tiger hunting"/>
+            <img src="assets/projects/bob/10.jpg" alt="3d scan of tipus tiger repositioned to be standing upright"/>
+            <img src="assets/projects/bob/11.jpg" alt="a light photopolymer print of tipus tiger and tiger skin pattern on the right"/>
+            <img src="assets/projects/bob/12.jpg" alt="the pamphlet opens revealing tipus tiger devouring kamala harris and reads 'whether west or whether east, i'm in the belly of the beast'"/>
+            <img src="assets/projects/bob/book_page5.JPG" alt="the pamphlet opens revealing tipus tiger devouring kamala harris and reads 'whether west or whether east, i'm in the belly of the beast'"/>
+    <br><br>
+    <a href="/">← back to selected work</a>
+    </main>
+
+    <!-- Nav js-->
+    <script>
+        window.onload = function(){
+
+            let open = document.querySelector("#message img:nth-child(1)");
+            open.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let open2 = document.querySelector("#message em");
+            open2.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let close = document.querySelector("#message img:nth-child(2)");
+            close.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+            let close2 = document.querySelector("#message-outer");
+            close2.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+        }
+    </script>
+    <script>
+        let sun = document.querySelector("#color-controls");
+        sun.addEventListener("click", function(){
+            if(document.body.classList.contains('dark-mode')){
+                document.body.classList.remove('dark-mode')
+            }else{
+                document.body.classList.add('dark-mode')
+            }
+        })
+    </script>
+    <!-- image changing js -->
+    <script>
+    
+
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
+    </script>
+</body>
+</html>
+
