@@ -1,0 +1,105 @@
+
+:root{
+    --background: #1b1b1d;
+    --color: #f8f8f8;
+    --font-size-body: 18px;
+    --font-family:  "turnip-re", sans-serif;
+    --font-size-heading: 24px;
+    --space: 50px;
+}
+body{
+    color: var(--color);
+    background-color: var(--background);
+    margin:0;
+    line-height: 1.2;
+    padding:0;
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+}
+a, a:link, a:visited{
+    color: inherit;
+}
+h1{
+    font-weight: normal;
+    font-size: var(--font-size-heading)
+}
+
+.intro{
+    background-color: var(--color);
+    color:var(--background);
+    padding: var(--space);
+}
+.project{
+    padding: var(--space);
+}
+.projects .project, .intro .inner{
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+.project img{
+    width: 100%;
+    margin-top: var(--space);
+}
+nav{
+    position:fixed;
+    top:0;
+    right:0;
+    padding: calc(var(--space)/2);
+    background-color: transparent;
+    text-align: right;
+    z-index: 9;
+    height: calc(100vh - var(--space));
+}
+nav ul{
+    overflow: hidden;
+    list-style: none;
+    opacity: 0;
+    padding-left:0;
+    background-color: var(--background);
+    transition: 0.1s;
+    pointer-events: none;
+    padding: calc(var(--space)/2);
+}
+nav ul li{
+    margin-top: calc(var(--space)/2);
+}
+nav.open ul{
+    opacity: 1;
+    pointer-events: all;
+}
+nav.open{
+    background-color: var(--background);
+    height: calc(100vh - var(--space));
+}
+nav #trigger svg{
+    cursor: pointer;
+    width: 80px;
+}
+nav #trigger rect{ 
+    transition: 0.2s;
+    fill: var(--background);
+}
+nav.white #trigger rect{ 
+    transition: 0.2s;
+    fill: var(--color);
+}
+
+nav.open #trigger rect:first-child, nav.open #trigger rect:last-child{
+    opacity: 0;
+}
+nav.open #trigger rect:nth-child(2){
+    fill:var(--color);
+}
+
+@media(max-width: 768px) {
+
+    :root{
+        --space: 35px;
+    }
+    nav #trigger svg{
+        width: 50px;
+    }
+
+    
+}
