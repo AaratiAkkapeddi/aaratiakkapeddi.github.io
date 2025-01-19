@@ -224,6 +224,16 @@ Exhibited: Center for Book Arts, New York & Savvy Contemporary, Berlin
         }
     })
 
+    let as = document.querySelectorAll("nav a");
+    as.forEach((el) => {
+        el.addEventListener("click", function(){
+            let nav = document.querySelector("nav");
+            if(nav?.classList.contains("open")){
+                nav.classList.remove("open");
+            }
+        })
+    })
+   
 
     window.addEventListener("scroll", function() {
         let elementTarget = document.getElementById("intro");
