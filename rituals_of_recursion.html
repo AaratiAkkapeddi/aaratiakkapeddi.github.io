@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarati</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+</head>
+<body>
+    <svg display="none">
+        <defs>
+           <filter id="turbulence-1">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-2">
+            <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-3">
+            <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-4">
+            <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        
+          <filter id="turbulence-5">
+            <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+          </filter>
+        </defs>
+      </svg>
+    <!-- Navigation -->
+    <nav>
+        <div><a href="/"><h1>AARATI AKKAPEDDI</h1></a></div>
+        <div>
+            <a href="./about.html"><span>About</span></a>
+            <a href="/"><span>Selected Work</span></a>
+            <a href="https://blog.aarati.online/"><span>Process</span></a>  
+        </div>
+       
+            
+    </nav>
+    <div id="color-controls">
+        <img alt="sun icon for changing to light mode" src='assets/sun.svg'/><img alt="moon icon for changing to dark mode" src='assets/moon.svg'/>
+    </div>
+    <!-- End Navigation -->
+    <div id="message">
+        <img alt="envelope icon" src='assets/closed.svg'/><img alt="envelope icon" src='assets/open.svg'/>
+        <span><em></em></span>
+        <div id="message-inner">
+            <p>
+                Dear Reader,<br>
+                <blockquote>   Thank you for taking the time to look through my work. It means a lot to me.
+                    In the top right corner of this page you will find a drop down menu with links to an <a href="./about.html">about page</a>, <a href="/">selected works</a>, <a href="https://blog.aarati.online/">blog</a> and more. <br> If you are looking for my web development/design work, you may want to check out <a href="./coding.html">this page.</a> You can contact me directly at <a href="mailto:aarati.online@proton.me">aarati.online@proton.me</a></blockquote>
+                Sending you my best,
+                <blockquote>Aarati<span id='blinking-cursor'></span></blockquote></p>
+        </div>
+        <div id="message-outer"></div>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+  
+        <h1>RITUALS OF RECURSION</h1><br>
+
+        <div class="project" id="akin">
+
+            <em>January 2025 -- Solo Exhibition at <a href="https://spill180.com/">Spill 180</a> with poetic activation by <a href="https://www.instagram.com/theteluguarchive">The Telugu Archive</a></em>
+           <br><br> 
+            <em>(Decode kolams: <a target="_blank" href="https://kolam.codes/ritual/">https://kolam.codes/ritual/</a>)</em><br>
+            <p>I developed a computer program that allows me to translate text into Kolam designs. Kolam (in Tamil) or Muggu (Telugu) is a traditional art form from South India. Kolams are auspicious drawings on the floor (usually at the threshold of the home) using rice flour. Kolams are traditionally made by women and created before sunrise. They comprise mathematically complex patterns that feature continuous intertwined lines. 
+
+<br><br>
+                To encode text into Kolam designs, I first translate each character into eight-digit binary codes (made from only 0s and 1s). I then use an algorithm to map this translation onto a diamond-shaped matrix of dots. The algorithm moves top to bottom and left to right, drawing loops on each dot that correspond with either 0 or 1 according to the binary code translation of the text. The algorithm connects these loops, making sure to never connect loops associated with “0” to those associated with “1”. The center of the matrix contains blank padding space, allowing the entire pattern to be distributed evenly on the matrix, preserving the perfect square/diamond shape. 
+ 
+                <img alt="diagram of two perfect squares/diamond grids. On one, curved lines in different shades loop around the dots of the grid. In the other, 0's and 1's replace the dots acting as a key for the other." src="assets/projects/ks/diagram.svg"/>
+
+               <a target="_blank" href="./swarajyalaxmi.html">I started working with kolams because I wanted to translate my grandmother’s name, Swarajyalaxmi, into a kolam as part of a reclamation of a mourning ritual after her passing in 2022</a>.  My family mourned my grandmother by invoking three generations following a patriarchal line (my grandmother, her mother-in-law, and her mother-in-law’s mother-in-law). In contrast, I worked matrilineally, creating three kolams representing Swarajyalaxmi, Kameswaramma (her mother), and Rajyalaxmi (her grandmother).  I draw the kolams signifying their names while simultaneously playing audio from an interview with her a month before she passed away at age 101. The audio shows how my grandmother’s name signifies independence in the colonial context, and the interview also highlights her resilience in the face of patriarchal oppressions such as being married at age twelve.
+                <br><br>
+                In this exhibition, I expand on this work by incorporating new letterpress printed works created using a set of 3D-printed kolam monotype blocks.  There are kolams for my grandmother, her mother, and her grandmother but I also include letterpress prints that extend the process beyond familial connections. There are kolams commissioned by friends honoring their loved ones, kolams honoring  martyrs, specific places, and some that feature messages of resilience and resistance. In these works, I see the act of translation as a ritual of reverence. Each kolam becomes an invocation and an offering. I invited all to spend time with each kolam and decode its meaning using <a href="https://kolam.codes/ritual/">kolam.codes.</a> On this website, visitors could also encrypt new kolams. 
+                <br><br>
+                Together, these works explore the recursive nature of identity: names containing histories and personal stories intertwining with collective memory. 
+                <br><br>
+                <hr>
+                <br><br>
+                In addition to the artwork, the exhibition also features a "reading nook" with a zine of Telugu poetry curated by <a href="https://www.instagram.com/theteluguarchive">The Telugu Archive</a> (Sai Priya Kodidala). The poems  touch on themes of patriarchy, resistance, and the ways women have shared histories through mediums outside of traditional academia (i.e. song, clothing, kolam/muggulu). Sai Priya Kodidala is an independent writer and researcher from Hyderabad, India focusing on the intersection of Telugu literature, politics, history and art. The Telugu Archive traces the rich socio-political history of resistance, civil rights and revolutionary politics.
+
+                <br><br>
+                You can view the zine online <a href="https://drive.google.com/file/d/1pRU1ZtXJpTb9fufNlzasBLJdkikcbFXp/view?usp=drive_link">here</a>.
+            </p>
+<hr><br><br>
+
+            <img alt="gallery view" src="assets/projects/recursion/afternoon.jpg">
+            <span class="caption">gallery view</span>
+            <img alt="letterpress prints." src="assets/projects/recursion/prints.jpg"/>
+            <span class="caption">Letterpress prints</span>
+
+            <img alt="letterpress prints - detail." src="assets/projects/recursion/print_detail2.jpg"/>
+            <span class="caption">Letterpress prints</span>
+            
+            <img alt="letterpress prints - detail." src="assets/projects/recursion/print_details4.jpg"/>
+            <span class="caption">Letterpress prints</span>
+            <img alt="detail shot of someone decoding a kolam using the website on an ipad" src="assets/projects/recursion/decode1.jpg">
+            <span class="caption">decoding a kolam on the website</span>
+            <img alt="me drawing the kolam on the ground with rice flour." src="assets/projects/recursion/kolam_drawing.jpg"/>
+            <span class="caption">Drawing the kolam</span>
+
+            <img alt="detail shot of me drawing the kolam" src="assets/projects/recursion/drawing.gif"/>
+
+            <img alt="me drawing the kolam" src="assets/projects/recursion/progress.jpg"/>
+
+         
+
+            <img alt="close up of kolam" src="assets/projects/recursion/texture.jpg"/>
+            <span class="caption">close-up</span>
+            
+
+            <img alt="finished kolam." src="assets/projects/recursion/full_kolam.png"/>
+            <span class="caption">finished kolam</span>
+
+            
+            <img alt="reading nook" src="assets/projects/recursion/reading_nook.jpg">
+            <span class="caption">reading nook</span>
+
+            <img alt="zines" src="assets/projects/recursion/zine_nook.jpg">
+            <span class="caption">zines</span>
+
+            <img alt="zine" src="assets/projects/recursion/bandits.jpg">
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1051989480?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; muted; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Rituals of Recursion, Closing"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <span class="caption">grateful to all that came to the exhibition!</span>
+
+            
+
+
+    <br><br>
+    <a href="/">← back to selected work</a>
+    </main>
+
+    <!-- Nav js-->
+    <script>
+        window.onload = function(){
+
+            let open = document.querySelector("#message img:nth-child(1)");
+            open.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let open2 = document.querySelector("#message em");
+            open2.addEventListener("click", function(){
+                document.querySelector("#message").classList.add('on')
+            })
+            let close = document.querySelector("#message img:nth-child(2)");
+            close.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+            let close2 = document.querySelector("#message-outer");
+            close2.addEventListener("click", function(){
+                document.querySelector("#message").classList.remove('on')
+            })
+        }
+    </script>
+    <script>
+        let sun = document.querySelector("#color-controls");
+        sun.addEventListener("click", function(){
+            if(document.body.classList.contains('dark-mode')){
+                document.body.classList.remove('dark-mode')
+            }else{
+                document.body.classList.add('dark-mode')
+            }
+        })
+    </script>
+    <!-- image changing js -->
+    <script>
+    
+
+        const onScrollStop = callback => {
+        let isScrolling;
+        window.addEventListener(
+            'scroll',
+            e => {
+            clearTimeout(isScrolling);
+            document.querySelector("main").classList.add('squiggle')
+            isScrolling = setTimeout(() => {
+                callback();
+            }, 150);
+            },
+            false
+        );
+        };
+
+        onScrollStop(() => {
+            document.querySelector("main").classList.remove('squiggle')
+        console.log('The user has stopped scrolling');
+        });
+    </script>
+
+</body>
+</html>
+
